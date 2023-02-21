@@ -1,0 +1,16 @@
+.container{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    max-width: 100% !important;
+    background: turquoise;
+}
+.logo{
+    display: flex !important;
+    align-items: center !important;
+    height: 70px !important;
+}
+.loginForm{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
