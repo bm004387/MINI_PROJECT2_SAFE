@@ -8,7 +8,9 @@ const Home = () => {
     <div className='main'>
       <Container>
         <div className='safeList'>
-          <h4>나에게 필요한 안전교육은?</h4>
+          <ul>
+            <li><h4>나에게 필요한 안전교육은?</h4></li>
+          </ul>
         </div>
       </Container>
     </div>

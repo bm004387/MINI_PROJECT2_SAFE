@@ -1,14 +1,46 @@
+*{
+    list-style: none;
+}
+@font-face{
+    font-family: 'Binggrae';
+    src: url(./Binggrae-Bold.ttf) format('truetype');
+}
 .main{
     width: 100%;
     height: 700px;
     background-color: bisque;
+    padding: 20px;
 }
 .safeList{
     margin-top: 50px;
 }
-.safeList h4::before{
-    background-image: url(../public/images/icon/check_icon.svg);
+.safeList h4{
+    color: #009342;
+    font-family: 'Binggrae';
+    font-size: 50px;
+}
+.safeList h4:before{
+    content: url(./check_icon.svg);
+    margin-right: 50px;
 }
 .safeList img{
     width: 50px;
+}
+@media screen and (max-width: 1024px){
+    .main{
+        padding: 10px 20px !important;
+    }
+    .safeList h4{
+        font-size: 40px;
+    }
+}
+@media (min-width: 576px){
+    .container{
+        max-width: 1140px !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .safeList h4{
+        font-size: 30px;
+    }
 }
