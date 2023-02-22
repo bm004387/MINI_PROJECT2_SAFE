@@ -9,14 +9,19 @@ import { faHelmetSafety } from "@fortawesome/free-solid-svg-icons";
 import { faPerson } from "@fortawesome/free-solid-svg-icons";
 import { faHandsPraying } from "@fortawesome/free-solid-svg-icons";
 import Image from 'react-bootstrap/Image';
+import Movie from './movie';
+import { useNavigate } from 'react-router-dom';
 import './intro.css';
 
 
 class Intro extends React.Component{
     render(){
+    
         return(
               <>
                     
+                   
+        
           <Container className="Con1">
 
           <h1>회사소개</h1>

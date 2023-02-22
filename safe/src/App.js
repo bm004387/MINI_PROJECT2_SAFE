@@ -8,6 +8,7 @@ import Login from './screens/Login';
 import SighUp from './screens/SighUp';
 import NavBarElement from './components/NavBarElement';
 import Intro from './avagce/introduce';
+import Movie from './avagce/movie';
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/About" element={<Intro/>}/>
+        <Route path="/Movie" element={<Movie/>}/>
         <Route path="/Projects" element={<Projects/>}/>
         <Route path="/Login" element={<Login/>}/>
         <Route path="/SighUp" element={<SighUp/>}/>
