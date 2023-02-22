@@ -7,6 +7,7 @@ import Projects from './screens/Projects';
 import Login from './screens/Login';
 import SighUp from './screens/SighUp';
 import NavBarElement from './components/NavBarElement';
+import Intro from './avagce/introduce';
 
 
 
@@ -16,7 +17,7 @@ function App() {
       <NavBarElement/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/About" element={<About/>}/>
+        <Route path="/About" element={<Intro/>}/>
         <Route path="/Projects" element={<Projects/>}/>
         <Route path="/Login" element={<Login/>}/>
         <Route path="/SighUp" element={<SighUp/>}/>

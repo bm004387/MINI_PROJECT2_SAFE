@@ -17,7 +17,7 @@ class Intro extends React.Component{
         return(
               <>
                     
-          <Container>
+          <Container className="Con1">
 
           <h1>회사소개</h1>
           <Row md={4}>
@@ -49,7 +49,7 @@ class Intro extends React.Component{
                          
                           </Row>
                     </Container>
-                    <Container>
+                    <Container className="Con2">
                                         <h1>활동 자료</h1>
                                         <Row md={2}>
                                         <Col sm={10}>
