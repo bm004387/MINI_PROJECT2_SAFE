@@ -25,9 +25,9 @@ function NavBarElement() {
       </div>
     </Container>
     </Navbar>
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className='header'>
       <Container>
-        <Navbar.Brand href="/" className="logo"><img src='../images/logo.png'/></Navbar.Brand>
+        <Navbar.Brand href="/" className="logo"><img src='/images/logo.png'/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -51,7 +51,7 @@ function NavBarElement() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">검색</Button>
+            <Button variant="outline-success" className='shBtn'>검색</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
