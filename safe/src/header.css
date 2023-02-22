@@ -7,6 +7,9 @@
 .shBtn{
     width: 100px;
 }
+.header{
+    border-bottom: 1px solid lightgray;
+}
 .logo{
     display: flex !important;
     align-items: center !important;
@@ -26,6 +29,9 @@
 .iconGroup img{
     width: 20px;
     margin-left: 10px;
+}
+form{
+    padding: 10px 0;
 }
 @media (min-width: 1200px){
     .container{
