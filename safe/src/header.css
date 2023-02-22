@@ -2,12 +2,14 @@
     margin-right: 0 !important;
     margin-left: 0 !important;
     max-width: 100% !important;
-    background: turquoise;
 }
 .logo{
     display: flex !important;
     align-items: center !important;
     height: 70px !important;
+}
+.logo img{
+    width: 300px;
 }
 .loginForm{
     display: flex;
