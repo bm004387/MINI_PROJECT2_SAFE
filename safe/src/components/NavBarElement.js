@@ -13,8 +13,8 @@ function NavBarElement() {
       <img/>
       </div>
       <div>
-        <a href='#'>로그인</a> | 
-        <a>회원가입</a>
+        <a href='/Login'>로그인</a> | 
+        <a href='/SighUp'>회원가입</a>
       </div>
     </div>
     <Navbar bg="light" expand="lg">
