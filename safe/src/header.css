@@ -1,7 +1,11 @@
 .container{
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-    max-width: 100% !important;
+    padding: 10px !important;
+}
+.navbar{
+    padding: 0 !important;
+}
+.form button{
+    width: 100px;
 }
 .logo{
     display: flex !important;
@@ -11,8 +15,20 @@
 .logo img{
     width: 300px;
 }
-.loginForm{
+.iconGroup{
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    /* background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px; */
+}
+.iconGroup img{
+    width: 20px;
+    margin-left: 10px;
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1400px !important;
+    }
 }
