@@ -50,7 +50,7 @@ function NavBarElement() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">검색</Button>
+            <Button variant="outline-success" className='shBtn'>검색</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
