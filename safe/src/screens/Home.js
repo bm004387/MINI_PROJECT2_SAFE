@@ -64,8 +64,11 @@ const Home = () => {
             </div>
           </div>
           <div className='ftcont2'>
-            <div>
-              
+            <div className='ntcfaq'>
+              <ul>
+                <li><a>공지사항</a></li>
+                <li><a>자주묻는질문들</a></li>
+              </ul>
             </div>
           </div>
         </div>
