@@ -87,6 +87,11 @@
     padding: 30px 20px;
     background: violet;
 }
+.rightcont ul li a{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
 .rightcont ul li:nth-child(1){
     margin-bottom: 30px;
     border-radius: 10px 30px 10px 30px;
