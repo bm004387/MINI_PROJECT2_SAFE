@@ -9,7 +9,7 @@ export const getRows = (sql) => {
       // 오라클과 커넥션
       {
         user: "TEST", // DB의 USER 이름
-        password: "TEST123", // DB의 비밀번호
+        password: "TEST1234", // DB의 비밀번호
         connectString: "orcl", // DB의 이름
       },
       function (err, connection) {
@@ -36,7 +36,7 @@ export const getResult = (sql) => {
       // 위와동일
       {
         user: "TEST",
-        password: "TEST123",
+        password: "TEST1234",
         connectString: "orcl",
       },
       function (err, connection) {

@@ -7,23 +7,38 @@
 }
 .main{
     width: 100%;
-    height: 700px;
+    height: 100%;
     background-color: bisque;
     padding: 20px;
 }
 .test{
     display: flex;
-}
-.safeList{
+    margin: 0 auto;
     width: 100%;
+    height: 100%;
 }
-.safeList h4{
+.topcont{
+    width: 100%;
+    height: 80%;
+}
+.topcont ul{
+    margin-bottom: 85px;
+}
+.topcont ul li:nth-child(2){
+    padding-left: 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.topcont ul li span{
+    color: orange;
+    background: linear-gradient(to top, #feff96 50%, transparent 70%);
+}
+.topcont h4{
     color: #009342;
     font-family: 'Binggrae';
     font-size: 50px;
-    margin-bottom: 85px;
 }
-.safeList h4:before{
+.topcont h4:before{
     content: "";
     background-image: url(./check_icon.svg);
     background-size: 50px 50px;
@@ -32,7 +47,7 @@
     display: inline-block;
     margin-right: 20px;
 }
-.safeList img{
+.topcont img{
     width: 50px;
 }
 .jop{
@@ -58,24 +73,69 @@
     background: #009342;
 }
 .rightcont{
-    width: 16%;
+    width: 20%;
 }
 .rightcont ul{
-    height: 100%;
+    height: 50%;
 }
 .rightcont ul li{
     width: 100%;
-    height: 100%;
+    height: 88%;
     background: violet;
+}
+.rightcont ul li:nth-child(1){
+    margin-bottom: 30px;
+}
+.ftcont{
+    width: 100%;
+    height: 600px;
+    background: yellow;
+    display: flex;
+    padding: 30px;
+}
+.ftcont1{
+    width: 40%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+.imgcont{
+    width: 80%;
+    background-color: #009342;
+    height: 50%;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.guide{
+    display: flex;
+    height: 20%;
+    width: 80%;
+    padding-top: 20px;
+}
+.guide_item1{
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+    background-color: aquamarine;
+    border-radius: 10px 10px 10px 40px;
+}
+.guide_item2{
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 10px 10px 10px 10px;
+}
+.ftcont2{
+    width: 60%;
+    height: 100%;
+    background: #feff96;
 }
 @media screen and (max-width: 1024px){
     .main{
         padding: 10px 20px !important;
     }
-    .safeList h4{
+    .topcont h4{
         font-size: 40px;
     }
-    .safeList h4:before{
+    .topcont h4:before{
         content: "";
         background-image: url(./check_icon.svg);
         background-size: 40px 40px;
@@ -90,10 +150,10 @@
     }
 }
 @media screen and (max-width: 768px){
-    .safeList h4{
+    .topcont h4{
         font-size: 30px;
     }
-    .safeList h4:before{
+    .topcont h4:before{
         content: "";
         background-image: url(./check_icon.svg);
         background-size: 30px 30px;
