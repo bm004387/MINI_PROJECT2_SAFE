@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import Carousel from 'react-bootstrap/Carousel';
 import React from 'react'
 import '../home.css';
 
@@ -53,9 +54,29 @@ const Home = () => {
       <Container>
         <div className='ftcont'>
           <div className='ftcont1'>
-            <div className='imgcont'>
-              <img src='/check_icon.svg' alt='테스트'/>
-            </div>
+          <Carousel fade>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={'/images/Carousel_1.png'}
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={'/images/Carousel_2.jpg'}
+                alt="Second slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={'/images/Carousel_3.jpg'}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
             <div className='guide'>
               <div className='guide_item1'>
                 <p>테스트1</p>
