@@ -59,6 +59,7 @@
 .jop dl{
     width: calc(100% / 6);
     margin-right: 15px !important;
+    position: relative;
 }
 .jop dl dt{
     background: #000;

@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Carousel from 'react-bootstrap/Carousel';
 import React from 'react'
 import '../home.css';
+import $ from "jquery";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
                 <li><span>아래 교육유형을 선택하시면 필요하신 교육과정</span>을 확인하실 수 있습니다</li>
               </ul>
             <div className='jop'>
-              <dl>
+              <dl className='delay'>
                 <dt>사업주</dt>
                 <dd></dd>
               </dl>
@@ -124,3 +125,7 @@ const Home = () => {
 }
 
 export default Home
+
+$(function(){
+  $(".delay").delay(1000).animate({ opacity: 0.8, top: -100 }, 600, "swing")
+})
