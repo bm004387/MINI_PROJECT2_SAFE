@@ -43,8 +43,8 @@ const Home = () => {
             </div>
             <div className='rightcont'>
               <ul>
-                <li><a href='#' className='btn1'>개별사업장<br></br> 안전보건교육</a></li>
-                <li><a href='#' className='btn2'>건설업 기초안전<br></br> 보건교육</a></li>
+                <li><a href='#' className='ratio'>개별사업장<br></br> 안전보건교육</a></li>
+                <li><a href='#' className='ratio'>건설업 기초안전<br></br> 보건교육</a></li>
               </ul>
             </div>
           </div>
