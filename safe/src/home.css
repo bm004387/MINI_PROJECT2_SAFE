@@ -7,23 +7,41 @@
 }
 .main{
     width: 100%;
-    height: 700px;
+    height: 100%;
+}
+.maintop{
+    width: 100%;
     background-color: bisque;
-    padding: 20px;
+    padding: 50px 20px;
 }
 .test{
     display: flex;
-}
-.safeList{
+    margin: 0 auto;
     width: 100%;
+    height: 100%;
 }
-.safeList h4{
+.topcont{
+    width: 100%;
+    height: 80%;
+}
+.topcont ul{
+    margin-bottom: 85px;
+}
+.topcont ul li:nth-child(2){
+    padding-left: 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.topcont ul li span{
+    color: orange;
+    background: linear-gradient(to top, #feff96 50%, transparent 70%);
+}
+.topcont h4{
     color: #009342;
     font-family: 'Binggrae';
     font-size: 50px;
-    margin-bottom: 85px;
 }
-.safeList h4:before{
+.topcont h4:before{
     content: "";
     background-image: url(./check_icon.svg);
     background-size: 50px 50px;
@@ -32,7 +50,7 @@
     display: inline-block;
     margin-right: 20px;
 }
-.safeList img{
+.topcont img{
     width: 50px;
 }
 .jop{
@@ -41,6 +59,7 @@
 .jop dl{
     width: calc(100% / 6);
     margin-right: 15px !important;
+    position: relative;
 }
 .jop dl dt{
     background: #000;
@@ -58,24 +77,150 @@
     background: #009342;
 }
 .rightcont{
-    width: 16%;
+    width: 20%;
 }
 .rightcont ul{
-    height: 100%;
+    height: 50%;
 }
 .rightcont ul li{
     width: 100%;
-    height: 100%;
+    height: 88%;
     background: violet;
+    position: relative;
+}
+.rightcont ul li a{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    padding: 30px 20px;
+    text-align: center;
+
+}
+.rightcont ul li:nth-child(1){
+    margin-bottom: 30px;
+    border-radius: 10px 30px 10px 30px;
+}
+.rightcont ul li:nth-child(2){
+    border-radius: 30px 10px 30px 10px;
+}
+.rightcont ul li:nth-child(1) a::before{
+    content: "";
+    background-image: url(./company.png);
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.rightcont ul li:nth-child(2) a::before{
+    content: "";
+    background-image: url(./book.png);
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.ftcont{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    padding: 30px;
+}
+.ftcont1{
+    width: 40%;
+    height: 100%;
+}
+.imgcont{
+    width: 90%;
+    background-color: #009342;
+    height: 50%;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.guide{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    padding-top: 20px;
+}
+.guide_item1{
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+    background-color: aquamarine;
+    border-radius: 10px 10px 10px 40px;
+}
+.guide_item2{
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 10px 10px 10px 10px;
+}
+.carousel-inner{
+    border-radius: 20px 20px 0 0;
+    height: 350px;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-item{
+    width: 100%;
+    height: 100%;
+}
+.ftcont2{
+    width: 60%;
+    height: 100%;
+}
+.ntcfaq ul:nth-child(1){
+    position: relative;
+}
+.ntcfaq ul li{
+    width: 50%;
+    float: left;
+}
+.ntcfaq ul li a{
+    text-align: center;
+    display: block;
+    height: 66px;
+    font-size: 18px;
+    padding: 20px 5px;
+    box-sizing: border-box;
+}
+.ntcfaq ul li:first-child > a{
+    background-color: #009342;
+    border-radius: 10px 0 0 10px;
+}
+.notice{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.notice ul li:first-child{
+    padding: 40px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 0;
+}
+.notice ul li{
+    padding: 15px 30px 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
 }
 @media screen and (max-width: 1024px){
     .main{
         padding: 10px 20px !important;
     }
-    .safeList h4{
+    .topcont h4{
         font-size: 40px;
     }
-    .safeList h4:before{
+    .topcont h4:before{
         content: "";
         background-image: url(./check_icon.svg);
         background-size: 40px 40px;
@@ -90,10 +235,10 @@
     }
 }
 @media screen and (max-width: 768px){
-    .safeList h4{
+    .topcont h4{
         font-size: 30px;
     }
-    .safeList h4:before{
+    .topcont h4:before{
         content: "";
         background-image: url(./check_icon.svg);
         background-size: 30px 30px;
