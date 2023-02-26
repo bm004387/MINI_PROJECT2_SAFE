@@ -24,7 +24,10 @@ class Intro extends React.Component{
         
           <Container className="Con1">
 
-          <Image src="images/intro/about.jpg" class="img-responsive" width={2000} alt="intro_about" fluid />
+
+          <div className="about">
+            <Image src="images/intro/about.jpg" class="img-responsive" width={1000} alt="about" fluid/>
+          </div>
 
           <Row md={4}>
           <Col sm={4}>
