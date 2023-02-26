@@ -3,6 +3,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import React from 'react'
 import '../home.css';
 import $ from "jquery";
+import About from "./About"
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
 const Home = () => {
   return (
@@ -89,32 +92,21 @@ const Home = () => {
           </div>
           <div className='ftcont2'>
             <div className='ntcfaq'>
-              <ul>
-                <li><a href='a'>공지사항</a>
-                  <div className='notice'>
-                    <ul>
-                      <li>2024년 안전보건교육기관 평가지표 공표<span className='date'>2023-02-23</span></li>
-                      <li>건설업 기초안전보건교육 안내문 게시<span className='date'>2023-02-23</span></li>
-                      <li>'24년 기관평가 지표 개편(안) 공지<span className='date'>2023-02-23</span></li>
-                      <li>2022년 안전보건교육 안내서 안내<span className='date'>2023-02-23</span></li>
-                      <li>"중대재해 감축 로드맵" 수립을 위한 토론회 안내<span className='date'>2023-02-23</span></li>
-                      <li>건설업 기초안전보건교육 이수자 개인정보 정정 절차 안내<span className='date'>2023-02-23</span></li>
-                    </ul>
-                  </div>
-                </li>
-                <li><a href='a'>자주묻는질문들</a>
-                  <div className='notice'>
-                    <ul>
-                      <li>2024년 안전보건교육기관 평가지표 공표<span className='date'>2023-02-23</span></li>
-                      <li>건설업 기초안전보건교육 안내문 게시<span className='date'>2023-02-23</span></li>
-                      <li>'24년 기관평가 지표 개편(안) 공지<span className='date'>2023-02-23</span></li>
-                      <li>2022년 안전보건교육 안내서 안내<span className='date'>2023-02-23</span></li>
-                      <li>"중대재해 감축 로드맵" 수립을 위한 토론회 안내<span className='date'>2023-02-23</span></li>
-                      <li>건설업 기초안전보건교육 이수자 개인정보 정정 절차 안내<span className='date'>2023-02-23</span></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
+              <Tabs>
+                <Tab eventKey="notice" title="공지사항">
+                  <ul>
+                    <li>2024년 안전보건교육기관 평가지표 공표<span className='date'>2023-02-23</span></li>
+                    <li>건설업 기초안전보건교육 안내문 게시<span className='date'>2023-02-23</span></li>
+                    <li>'24년 기관평가 지표 개편(안) 공지<span className='date'>2023-02-23</span></li>
+                    <li>2022년 안전보건교육 안내서 안내<span className='date'>2023-02-23</span></li>
+                    <li>"중대재해 감축 로드맵" 수립을 위한 토론회 안내<span className='date'>2023-02-23</span></li>
+                    <li>건설업 기초안전보건교육 이수자 개인정보 정정 절차 안내<span className='date'>2023-02-23</span></li>
+                  </ul>
+                </Tab>
+                <Tab eventKey="FAQ" title="자주묻는 질문">
+                 <About/>
+                </Tab>
+              </Tabs>
             </div>
           </div>
         </div>
