@@ -11,13 +11,24 @@
     text-align: center;
 }
 .intro_img01_caption,.intro_img02_caption,.intro_img03_caption,.intro_img04_caption{
+    width: 10px !important;
     text-align: center;
 }
 
 .about{
-
-    margin-bottom: 200px;
+    margin-bottom: 250px;
+    margin: 100px;
 }
+
+.about02{
+    margin-bottom: 200px;
+    margin-right: 20px !important;
+    align-items: center!important;
+    margin-right: 5px !important;
+    text-align: center;
+}
+
+
 
 .Con1,.Con2 > h1 {
     margin-top: 60px;
@@ -30,9 +41,11 @@
 
 /*about our organization*/
 
-.intro_img01,.intro_img02,.intro_img03,.intro_img04 > Image {
-    width: 100%;
-}
+/* .intro_img01,.intro_img02,.intro_img03,.intro_img04 > {
+    width: 2000px !important;
+    text-align: center  !important;
+    height: 200px  !important;
+} */
 
 .icon{
     text-align: center;
@@ -54,11 +67,14 @@
     padding-left: 25%;
 }
 .react-player {
-    position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   }
 
 
+.event_box_wap>h1{
+    text-align: center;
 
+}
 

@@ -34,7 +34,7 @@ class Intro extends React.Component{
 
                           <div className="imgwap mission"><FontAwesomeIcon icon={faFireExtinguisher} className="icon" /></div>
                           <h2>Sacrifice</h2>
-                          <h3>누구도 예상하지 못한 곳에서 피해를 입은 사람들에게 희망을 전달합니다.</h3>
+                          <p>누구도 예상하지 못한 곳에서 피해를 입은 사람들에게 희망을 전달합니다.</p>
           </Col>       
          
           <Col sm={4}>
@@ -59,8 +59,10 @@ class Intro extends React.Component{
                           </Row>
                     </Container>
                     <Container className="Con2">
-                                        <h1>재난 지원 활동 사진</h1>
-                                        <Row md={2}>
+
+                    <div className="about02">
+            <Image src="images/intro/about02.jpg" class="img-responsive" width={1000} alt="about02" fluid/>
+          </div>                                        <Row md={2}>
                                         <Col sm={10}>
                                         <div className="event_box_wap event_animate_left">
                                   <div className="intro_img01">
@@ -68,9 +70,9 @@ class Intro extends React.Component{
                                   
                                   </div>
                                   <div className="intro_img01_caption">
-                                      <h1>네팔 지진 현장</h1>
                                       
                                   </div>
+                                      <h1>구호물품 전달</h1>
                               </div>
                            </Col>
                            <Col sm={10}>
@@ -80,10 +82,10 @@ class Intro extends React.Component{
                                       <Image src="images/intro/intro02.jpg" class="img-responsive" alt="intro_img02" fluid/>
                                   </div>
                                   <div className="intro_img02_caption">
-                                      <h1>네팔 지진 현장</h1>
  
                                  
                               </div>
+                                      <h1>네팔 지진 현장</h1>
                           </div>
                           </Col>
                           </Row>
@@ -95,9 +97,9 @@ class Intro extends React.Component{
                                       <Image src="images/intro/intro03.jpg" class="img-responsive" alt="" fluid/>
                                   </div>
                                   <div className="intro_img03_caption">
-                                      <h1>튀르키예 구호단</h1>
                                      
                                   </div>
+                                      <h1>튀르키예 구호단</h1>
                               </div>
                           
                           </Col>
@@ -108,9 +110,9 @@ class Intro extends React.Component{
                                       <Image src="images/intro/intro04.jpg" class="img-responsive" alt="" fluid/>
                                   </div>
                                   <div className="intro_img04_caption">
-                                      <h1>수해 복구</h1>
                                       
                                   </div>
+                                      <h1>수해 복구</h1>
                               </div>
                           
                           </Col>
