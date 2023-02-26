@@ -69,10 +69,9 @@ class Intro extends React.Component{
                                      <Image src="images/intro/intro01.jpg" class="img-responsive" alt="intro_img01" fluid />
                                   
                                   </div>
-                                  <div className="intro_img01_caption">
-                                      
-                                  </div>
                                       <h1>구호물품 전달</h1>
+                                  <div className="intro_img01_caption">
+                                  </div>
                               </div>
                            </Col>
                            <Col sm={10}>
@@ -99,7 +98,7 @@ class Intro extends React.Component{
                                   <div className="intro_img03_caption">
                                      
                                   </div>
-                                      <h1>튀르키예 구호단</h1>
+                                      <h1>재난 구호단</h1>
                               </div>
                           
                           </Col>

@@ -10,10 +10,9 @@
 .intro_img04{
     text-align: center;
 }
-.intro_img01_caption,.intro_img02_caption,.intro_img03_caption,.intro_img04_caption{
-    width: 10px !important;
-    text-align: center;
-}
+/* .intro_img01_caption,.intro_img02_caption,.intro_img03_caption,.intro_img04_caption{
+    /* width: 500%; */
+    /* text-align: center; */
 
 .about{
     margin-bottom: 250px;
@@ -21,7 +20,7 @@
 }
 
 .about02{
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     margin-right: 20px !important;
     align-items: center!important;
     margin-right: 5px !important;
