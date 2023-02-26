@@ -13,15 +13,18 @@ function NavBarElement() {
     <Navbar bg="light" expand="lg">
     <Container>
       <div className='iconGroup'>
-      <a href='#'><img src="/images/icon/naver_icon.svg" alt='네이버 아이콘' title='네이버로 바로가z기'/></a>
-      <a href='#'><img src="/images/icon/facebook_icon.svg" alt='페이스북 아이콘' title='페이스북으로 바로가기'/></a>
-      <a href='#'><img src="/images/icon/twitter_icon.svg" alt='트위터 아이콘' title='트위터로 바로가기'/></a>
-      <a href='#'><img src="/images/icon/youtube_icon.svg" alt='유튜브 아이콘' title='유튜브로 바로가기'/></a>
-      <a href='#'><img src="/images/icon/instargram_icon.svg" alt='인스타그램 아이콘' title='인스타그램으로 바로가기'/></a>
+
+      <a href='#!'><img src="/images/icon/naver_icon.svg" alt='네이버 아이콘' title='네이버로 바로가기'/></a>
+      <a href='#!'><img src="/images/icon/facebook_icon.svg" alt='페이스북 아이콘' title='페이스북으로 바로가기'/></a>
+      <a href='#!'><img src="/images/icon/twitter_icon.svg" alt='트위터 아이콘' title='트위터로 바로가기'/></a>
+      <a href='#!'><img src="/images/icon/youtube_icon.svg" alt='유튜브 아이콘' title='유튜브로 바로가기'/></a>
+      <a href='#!'><img src="/images/icon/instargram_icon.svg" alt='인스타그램 아이콘' title='인스타그램으로 바로가기'/></a>
+
+      
       </div>
       <div>
-        <a href='/LoginPage'>로그인</a> | 
-        <a href='/register'>회원가입</a>
+        <a href='/login'>로그인</a> | 
+       <a href='/register'>회원가입</a>
       </div>
     </Container>
     </Navbar>
@@ -35,13 +38,9 @@ function NavBarElement() {
             <Nav.Link href="/Movie">Movie</Nav.Link>
             <Nav.Link href="/Projects">Project</Nav.Link>
             <NavDropdown title="게시판" id="basic-nav-dropdown">
-              <NavDropdown.Item href="../fonted/3.1">게시글 작성하기</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">게시글 보기</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">게시글 삭제</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+
+              <NavDropdown.Item href="/board">게시글 작성하기</NavDropdown.Item>
+
             </NavDropdown>
           </Nav>
           <Form className="d-flex">
