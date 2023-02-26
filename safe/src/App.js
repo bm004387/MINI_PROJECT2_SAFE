@@ -1,25 +1,78 @@
 import React  from 'react';
 import './App.css';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+//import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router,Route, Switch, Redirect, BrowserRouter } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap'
+
 import Home from './screens/Home';
-import About from './screens/About';
+//import About from './screens/About';
 import Projects from './screens/Projects';
-import Login from './screens/Login';
+//import Login from './screens/Login';
 import SighUp from './screens/SighUp';
 import NavBarElement from './components/NavBarElement';
 import Intro from './avagce/introduce';
 import Movie from './avagce/movie';
 
-import LoginPage from "./pages/Login"; // 로그인 페이지 Import
-import Homemanage from "./pages/Home"; // 로그인 후 회원정보를 관리하는 페이지 Import
-import Register from "./pages/Register"; // 회원가입 페이지 Import
-import Forgot from "./pages/Forgot"; //아이디/비밀번호 찾기 페이지 import
-import Callback from "./pages/Callback"; //네이버로그인 콜백페이지
-import Address from "./pages/Address"; // 주소검색 페이지
-import Ipopup from "./pages/Ipopup"; // 주소검색 페이지
-import Mpopup from "./pages/Mpopup"; // 주소검색 페이지
+// 페이지들
+import Board from './views/Board';
+import Form from './views/Form';
+import View from './views/View';
+import Login from './views/Login';
+// 인증 모듈
+import auth from './auth';
+// 인증 확인해서 로그인 안되었을 경우 /login으로 리다이렉션하는 커스텀 함수
+function PrivateRoute ({component: Component, ...rest}) {
+  return (
+    <Route
+      {...rest}
+      render={(props) => auth.loggedIn === true
+        ? <Component {...props} />
+        : <Redirect to={{pathname: '/login', state: {from: props.location}}} />}
+    />
+  )
+}
 
+export default class App extends React.Component {
+	  constructor(props) {
+		super(props)
+		auth.chkAuth() // 인증 확인
+	} 
 
+	render() {
+		return (
+    <>
+			<Container>
+				<Row className='py-5'>
+					<Col md={12}>
+						{/* 라우팅 */}
+          
+            <NavBarElement/>
+           
+            
+						<Switch>
+                  <Route exact path="/" component={Home}/>
+              <Route  exact path="/About" component={Intro}/>
+              <Route  exact path="/Movie" component={Movie}/>
+              <Route  exact path="/Projects" component={Projects}/>
+              <Route exact path="/login" component={Login}/>
+              <PrivateRoute exact path="/SighUp" component={SighUp}/>
+							<PrivateRoute exact path='/board' component={Board} />
+							<PrivateRoute exact path='/add' component={Form} />
+							<PrivateRoute exact path='/edit/:id' component={Form}/>
+							<PrivateRoute exact path='/view/:id' component={View}/>
+							
+						</Switch>
+            
+            </Col>
+				</Row>
+			</Container>
+          
+            
+					
+		</>)
+	}
+}
+/*
 function App() {
   return (
     <Router>
@@ -48,3 +101,4 @@ function App() {
 }
 
 export default App;
+*/
