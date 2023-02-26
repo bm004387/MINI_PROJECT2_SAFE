@@ -16,28 +16,28 @@ const Home = () => {
                 <li><h4>나에게 필요한 안전교육은?</h4></li>
                 <li><span>아래 교육유형을 선택하시면 필요하신 교육과정</span>을 확인하실 수 있습니다</li>
               </ul>
-            <div className='jop'>
-              <dl className='delay'>
+            <div className='job'>
+              <dl className='job1'>
                 <dt>사업주</dt>
                 <dd></dd>
               </dl>
-              <dl>
+              <dl className='job2'>
                 <dt>근로자</dt>
                 <dd></dd>
               </dl>
-              <dl>
+              <dl className='job3'>
                 <dt>관리감독자</dt>
                 <dd></dd>
               </dl>
-              <dl>
+              <dl className='job4'>
                 <dt>직무교육 대상자</dt>
                 <dd></dd>
               </dl>
-              <dl>
+              <dl className='job5'>
                 <dt>특수형태 근로자</dt>
                 <dd></dd>
               </dl>
-              <dl>
+              <dl className='job6'>
                 <dt>학생</dt>
                 <dd></dd>
               </dl>
@@ -127,5 +127,13 @@ const Home = () => {
 export default Home
 
 $(function(){
-  $(".delay").delay(1000).animate({ opacity: 0.8, top: -100 }, 600, "swing")
+  $(".job1").delay(100).animate({ opacity: 1, top: 0 }, 600, "swing")
+  $(".job2").delay(200).animate({ opacity: 1, top: 0 }, 600, "swing")
+  $(".job3").delay(300).animate({ opacity: 1, top: 0 }, 600, "swing")
+  $(".job4").delay(400).animate({ opacity: 1, top: 0 }, 600, "swing")
+  $(".job5").delay(500).animate({ opacity: 1, top: 0 }, 600, "swing")
+  $(".job6").delay(600).animate({ opacity: 1, top: 0 }, 600, "swing")
+  $(".rightcont ul li:nth-child(1)").delay(100).animate({ opacity: 1, right: 0}, 600, "swing")
+  $(".rightcont ul li:nth-child(2)").delay(400).animate({ opacity: 1, right: 0}, 600, "swing")
+  
 })
