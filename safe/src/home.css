@@ -121,7 +121,7 @@
 }
 .rightcont ul li{
     width: 100%;
-    height: 88%;
+    height: 90%;
     background: violet;
     position: relative;
 }
@@ -133,6 +133,13 @@
     text-align: center;
     color: #fff;
     font-weight: bold;
+}
+span.br{
+    display: block;
+}
+.ratio > *{
+    height: 0 !important;
+    position: initial;
 }
 .rightcont ul li:nth-child(1){
     margin-bottom: 30px;
@@ -265,7 +272,7 @@
 .ftcont2{
     width: 60%;
     height: 100%;
-    padding: 0 50px;
+    padding-left: 50px;
 }
 .ntcfaq ul:first-child{
     width: 100%;
@@ -306,10 +313,25 @@
 .active{
     background-color: #394679;
 }
-@media screen and (max-width: 1024px){
-    .main{
-        padding: 10px 20px !important;
+@media screen and (max-width: 1200px){
+    .maincont{
+        display: block;
     }
+    .rightcont{
+        width: 100%;
+    }
+    .rightcont ul{
+        padding-left: 0;
+        display: flex;
+        width: 100%;
+        height: 200px;
+    }
+    .rightcont ul li:first-child{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px){
     .topcont h4{
         font-size: 40px;
     }

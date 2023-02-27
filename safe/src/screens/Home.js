@@ -47,8 +47,8 @@ const Home = () => {
             </div>
             <div className='rightcont'>
               <ul>
-                <li><a href='#' className='ratio'>개별사업장<br></br> 안전보건교육</a></li>
-                <li><a href='#' className='ratio'>건설업 기초안전<br></br> 보건교육</a></li>
+                <li><a href='#' className='ratio'>개별사업장<span className='br'> 안전보건교육</span></a></li>
+                <li><a href='#' className='ratio'>건설업 기초안전<span className='br'> 보건교육</span></a></li>
               </ul>
             </div>
           </div>
@@ -94,12 +94,12 @@ const Home = () => {
               <Tabs>
                 <Tab eventKey="notice" title="공지사항" className='notice'>
                   <ul>
-                    <li>2024년 안전보건교육기관 평가지표 공표<span className='date'>2023-02-23</span></li>
-                    <li>건설업 기초안전보건교육 안내문 게시<span className='date'>2023-02-23</span></li>
-                    <li>'24년 기관평가 지표 개편(안) 공지<span className='date'>2023-02-23</span></li>
-                    <li>2022년 안전보건교육 안내서 안내<span className='date'>2023-02-23</span></li>
-                    <li>"중대재해 감축 로드맵" 수립을 위한 토론회 안내<span className='date'>2023-02-23</span></li>
-                    <li>건설업 기초안전보건교육 이수자 개인정보 정정 절차 안내<span className='date'>2023-02-23</span></li>
+                    <li><a>2024년 안전보건교육기관 평가지표 공표</a><span className='date'>2023-02-23</span></li>
+                    <li><a>건설업 기초안전보건교육 안내문 게시</a><span className='date'>2023-02-23</span></li>
+                    <li><a>'24년 기관평가 지표 개편(안) 공지</a><span className='date'>2023-02-23</span></li>
+                    <li><a>2022년 안전보건교육 안내서 안내</a><span className='date'>2023-02-23</span></li>
+                    <li><a>"중대재해 감축 로드맵" 수립을 위한 토론회 안내</a><span className='date'>2023-02-23</span></li>
+                    <li><a>건설업 기초안전보건교육 이수자 개인정보 정정 절차 안내</a><span className='date'>2023-02-23</span></li>
                   </ul>
                 </Tab>
                 <Tab eventKey="FAQ" title="자주묻는 질문" className='notice'>
