@@ -10,6 +10,7 @@ import Projects from './screens/Projects';
 //import Login from './screens/Login';
 import SighUp from './screens/SighUp';
 import NavBarElement from './components/NavBarElement';
+import Footer from './components/Footer';
 import Intro from './avagce/introduce';
 import Movie from './avagce/movie';
 
@@ -41,12 +42,12 @@ export default class App extends React.Component {
 	render() {
 		return (
     <>
-			<Container>
 				<Row>
 					<Col>
 						{/* 라우팅 */}
           
             <NavBarElement/>
+            
            
             
 						<Switch>
@@ -62,10 +63,10 @@ export default class App extends React.Component {
 							<PrivateRoute exact path='/view/:id' component={View}/>
 							
 						</Switch>
-            
+
+            <Footer/>
             </Col>
 				</Row>
-			</Container>
           
             
 					
