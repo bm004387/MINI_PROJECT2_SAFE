@@ -33,7 +33,7 @@ class Intro extends React.Component{
           <Col sm={4}>
 
                           <div className="imgwap mission"><FontAwesomeIcon icon={faFireExtinguisher} className="icon" /></div>
-                          <h2>Sacrifice</h2>
+                          <h2>희생</h2>
                           <p>누구도 예상하지 못한 곳에서 피해를 입은 사람들에게 희망을 전달합니다.</p>
           </Col>       
          
