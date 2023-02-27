@@ -1,7 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 import './faq.css';
 
-function BasicExample() {
+function Faq() {
   return (
     <Accordion defaultActiveKey="">
       <Accordion.Item eventKey="0">
@@ -63,4 +63,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Faq;
