@@ -142,6 +142,7 @@
     color: #fff;
     font-weight: bold;
     white-space: nowrap;
+    font-family: 'Binggrae';
 }
 span.br{
     display: block;
@@ -267,7 +268,7 @@ span.br{
     height: 50px;
 }
 .carousel-inner{
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 20px 20px;
     height: 350px;
 }
 .carousel-inner img{
@@ -391,10 +392,42 @@ span.br{
         width: calc((100% - 40px) / 3);
         margin-right: 13px !important;
     }
+    .ftcont{
+        display: block;
+    }
+    .ftcont1{
+        display: flex;
+        width: 100%;
+        height: 60%;
+    }
+    .carousel{
+        width: 60% !important;
+    }
+    .carousel-inner{
+        height: 100%;
+    }
+    .guide{
+        width: 40% !important;
+        height: 47%;
+        padding-top: 0;
+        display: block;
+        margin-left: 20px;
+    }
+    .guide_item1{
+        margin-bottom: 20px;
+    }
+    .guide_item2{
+        height: 100%;
+    }
+    .ftcont2{
+        width: 100%;
+        margin-top: 50px;
+        padding: 0 30px !important;
+    }
 }
-@media (min-width: 576px){
+@media (min-width: 992px){
     .container{
-        max-width: 1140px !important;
+        max-width: 1100px !important;
     }
 }
 @media screen and (max-width: 768px){
@@ -408,6 +441,57 @@ span.br{
         width: 30px;
         height: 30px;
         display: inline-block;
+    }   
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 100% !important;
     }
-    
+}
+@media (max-width: 576px){
+    .topcont h4 {
+        font-size: 20px !important;
+    }
+    .topcont ul{
+        margin-bottom: 30px !important;
+    }
+    .topcont h4:before {
+        background-size: 20px 20px !important;
+        width: 20px !important;
+        height: 20px !important;
+        margin-right: 10px !important;
+    }
+    .topcont ul li:nth-child(2){
+        font-size: 10px !important;
+        padding: 0 !important;
+    }
+    .container{
+        max-width: 1140px !important;
+    }
+    .job dl dt{
+        font-size: 12px;
+    }
+    .rightcont ul li a {
+        font-size: 14px !important;
+    }
+    .rightcont ul li:nth-child(1) a::before {
+        margin: 0 !important;
+        background-size: 40px 40px;
+        width: 40px;
+        height: 40px;
+    }
+    .rightcont ul li:nth-child(2) a::before {
+        margin: 0 !important;
+        background-size: 40px 40px;
+        width: 40px;
+        height: 40px;
+    }
+    .ftcont1{
+        height: 40% !important;
+    }
+}
+@media (min-width: 576px){
+    .container{
+        max-width: 100% !important;
+    }
 }
