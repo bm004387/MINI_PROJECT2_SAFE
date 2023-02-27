@@ -18,6 +18,7 @@ import Board from './views/Board';
 import Form from './views/Form';
 import View from './views/View';
 import Login from './views/Login';
+import Loginout from './views/Loginout';
 // 인증 모듈
 import auth from './auth';
 // 인증 확인해서 로그인 안되었을 경우 /login으로 리다이렉션하는 커스텀 함수
@@ -55,6 +56,7 @@ export default class App extends React.Component {
               <Route  exact path="/Movie" component={Movie}/>
               <Route  exact path="/Projects" component={Projects}/>
               <Route exact path="/login" component={Login}/>
+              <Route exact path="/loginout" component={Loginout}/>
               <PrivateRoute exact path="/SighUp" component={SighUp}/>
 							<PrivateRoute exact path='/board' component={Board} />
 							<PrivateRoute exact path='/add' component={Form} />
