@@ -13,6 +13,7 @@ import NavBarElement from './components/NavBarElement';
 import Footer from './components/Footer';
 import Intro from './avagce/introduce';
 import Movie from './avagce/movie';
+import Faq from './avagce/Faq';
 
 // 페이지들
 import Board from './views/Board';
@@ -55,6 +56,7 @@ export default class App extends React.Component {
               <Route  exact path="/About" component={Intro}/>
               <Route  exact path="/Movie" component={Movie}/>
               <Route  exact path="/Projects" component={Projects}/>
+              <Route  exact path="/Faq" component={Faq}/>
               <Route exact path="/login" component={Login}/>
               <PrivateRoute exact path="/SighUp" component={SighUp}/>
 							<PrivateRoute exact path='/board' component={Board} />
