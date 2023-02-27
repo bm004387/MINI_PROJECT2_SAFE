@@ -43,7 +43,7 @@ export default class App extends React.Component {
     <>
 			<Container>
 				<Row>
-					<Col md={12}>
+					<Col>
 						{/* 라우팅 */}
           
             <NavBarElement/>

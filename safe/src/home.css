@@ -9,6 +9,14 @@
 .container{
     padding: 0 !important;
 }
+.row{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.col{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 .py-5{
     padding-top: 0 !important;
 }
@@ -133,6 +141,7 @@
     text-align: center;
     color: #fff;
     font-weight: bold;
+    white-space: nowrap;
 }
 span.br{
     display: block;
@@ -224,7 +233,7 @@ span.br{
 }
 .guide_item1 li:nth-child(1) a::before{
     content: "";
-    background-image: url(./company.png);
+    background-image: url(./education.png);
     background-size: 50px 50px;
     width: 50px;
     height: 50px;
@@ -252,7 +261,7 @@ span.br{
 }
 .guide_item2 li:nth-child(1) a::before{
     content: "";
-    background-image: url(./company.png);
+    background-image: url(./print.png);
     background-size: 50px 50px;
     width: 50px;
     height: 50px;
@@ -317,6 +326,9 @@ span.br{
     .maincont{
         display: block;
     }
+    .job{
+        margin-bottom: 20px;
+    }
     .rightcont{
         width: 100%;
     }
@@ -324,10 +336,38 @@ span.br{
         padding-left: 0;
         display: flex;
         width: 100%;
-        height: 200px;
+        height: 100px;
     }
     .rightcont ul li:first-child{
         margin-right: 20px;
+    }
+    .rightcont ul li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightcont ul li a .br{
+        padding-left: 5px;
+    }
+    .br{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .ratio > * {
+        width: auto;
+    }
+    .rightcont ul li:nth-child(2) a::before{
+        margin: 20px;
+    }
+    .rightcont ul li:nth-child(1) a::before{
+        margin: 20px;
+    }
+    .ftcont1{
+        width: 50%;
+    }
+    .ftcont2{
+        width: 50%;
     }
 }
 
@@ -342,6 +382,14 @@ span.br{
         width: 40px;
         height: 40px;
         display: inline-block;
+    }
+    .job{
+        flex-wrap: wrap;
+        margin-bottom: 20px !important;
+    }
+    .job dl{
+        width: calc((100% - 40px) / 3);
+        margin-right: 13px !important;
     }
 }
 @media (min-width: 576px){

@@ -47,8 +47,12 @@ const Home = () => {
             </div>
             <div className='rightcont'>
               <ul>
-                <li><a href='#' className='ratio'>개별사업장<span className='br'> 안전보건교육</span></a></li>
-                <li><a href='#' className='ratio'>건설업 기초안전<span className='br'> 보건교육</span></a></li>
+                <li>
+                  <a href='#' className='ratio'>개별사업장<span className='br'> 안전보건교육</span></a>
+                </li>
+                <li>
+                  <a href='#' className='ratio'>건설업 기초안전<span className='br'> 보건교육</span></a>
+                </li>
               </ul>
             </div>
           </div>
