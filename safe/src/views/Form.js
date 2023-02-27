@@ -39,7 +39,7 @@ export default class Add extends React.Component {
 		if(image) form.append('image', image)
 
 		// 추가 모드이면 put 메소드. 업데이트면 post 메소드로 전송
-		if(mode == 'add') {
+		if(mode === 'add') {
 			axios.put('/board', form, { headers: { 'Content-Type': 'multipart/form-data; charset=utf-8;' }})
 				.then(res => { alert(res.data.msg); history.goBack() }) // 성공 시 알림 및 페이지 되돌아가기
 				.catch(err => alert(err.response.data.msg)) // 실패 시 알림
@@ -66,14 +66,14 @@ export default class Add extends React.Component {
 					</Form.Group>
 					<Form.Group>
 						<Form.Label>이미지</Form.Label>
-						<Form.File accept='image/*' onChange={(event) => this.setState({ image: event.target.files[0] })}/>
+						<Form.Control type="file" accept='image/*' onChange={(event) => this.setState({ image: event.target.files[0] })}/>
 					</Form.Group>
 				</Col>
 				<Col md={6}>
 				<Button className='btn-secondary btn-block' onClick={() => history.goBack()}>취소</Button>
 				</Col>
 				<Col md={6}>
-					<Button className='btn-secondary btn-block' onClick={() => this.action()}>{mode == 'add' ? '글쓰기' : '수정'}</Button>
+					<Button className='btn-secondary btn-block' onClick={() => this.action()}>{mode === 'add' ? '글쓰기' : '수정'}</Button>
 				</Col>
 			</Row>
 		</>)

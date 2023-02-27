@@ -62,7 +62,7 @@ export default class Board extends React.Component {
 						</tr>
 						<tr>
 							<th>글내용</th>
-							<td>{info.content != 'null' ? info.content : '내용이 없습니다'}</td>
+							<td>{info.content !== 'null' ? info.content : '내용이 없습니다'}</td>
 						</tr>
 						<tr>
 							<th>이미지</th>
@@ -76,7 +76,7 @@ export default class Board extends React.Component {
 
 			<Row className='mb-4'>
 				<Col md={12}>
-					<Button className={`circle ${info.good == 1 ? 'btn-warning' : 'btn-light'} rounded-md mr-4`}
+					<Button className={`circle ${info.good === 1 ? 'btn-warning' : 'btn-light'} rounded-md mr-4`}
 						onClick={() => this.toggleGood()}>
 						좋아요
 					</Button>
