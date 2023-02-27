@@ -10,10 +10,12 @@ import Projects from './screens/Projects';
 //import Login from './screens/Login';
 import SighUp from './screens/SighUp';
 import NavBarElement from './components/NavBarElement';
-import Footer from './components/Footer';
 import Intro from './avagce/introduce';
 import Movie from './avagce/movie';
 import Movie1 from './avagce/movie1';
+import Movie2 from './avagce/movie2';
+import Movie3 from './avagce/movie3';
+import Movie4 from './avagce/movie4';
 import Faq from './avagce/Faq';
 import Location from './screens/Location';
 
@@ -61,6 +63,9 @@ export default class App extends React.Component {
               <Route  exact path="/About" component={Intro}/>
               <Route  exact path="/Movie" component={Movie}/>
               <Route  exact path="/Movie1" component={Movie1}/>
+              <Route  exact path="/Movie2" component={Movie2}/>
+              <Route  exact path="/Movie3" component={Movie3}/>
+              <Route  exact path="/Movie4" component={Movie4}/>
               <Route  exact path="/Projects" component={Projects}/>
               <Route  exact path="/Faq" component={Faq}/>
               <Route  exact path="/Location" component={Location}/>

@@ -9,7 +9,7 @@ class Movie extends React.Component{
               <>
               <div className="player">
                     <ReactPlayer
-    url={process.env.PUBLIC_URL + '/images/movie/quake.mp4'}
+    url={process.env.PUBLIC_URL + '/images/movie/movie1.mp4'}
     width='100%'
     height='100%'
     playing={true}
