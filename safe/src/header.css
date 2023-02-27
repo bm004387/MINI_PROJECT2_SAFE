@@ -1,3 +1,6 @@
+html{
+    overflow-x: hidden;
+}
 .container{
     padding: 5px 10px 10px 10px !important;
 }
@@ -9,6 +12,9 @@
 }
 .header{
     border-bottom: 1px solid lightgray;
+}
+.loginForm{
+    margin-right: 30px;
 }
 .py-5{
     padding-top: 0 !important;
