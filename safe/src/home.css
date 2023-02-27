@@ -5,6 +5,12 @@
     font-family: 'Binggrae';
     src: url(./Binggrae-Bold.ttf) format('truetype');
 }
+.container{
+    padding: 0 !important;
+}
+.py-5{
+    padding-top: 0 !important;
+}
 .main{
     width: 100%;
     height: 100%;
@@ -14,7 +20,7 @@
     background-color: bisque;
     padding: 50px 20px;
 }
-.test{
+.maincont{
     display: flex;
     margin: 0 auto;
     width: 100%;
@@ -61,22 +67,37 @@
     margin-right: 15px !important;
     position: relative;
     opacity: 0;
-    top: 50px;
+    top: 30px;
+    cursor: pointer;
 }
 .job dl dt{
-    background: #000;
+    background: #fff;
     border-radius: 24px;
     text-align: center;
-    color: #fff;
+    color: #000;
     padding: 12px 5px;
     margin-bottom: 20px;
+    box-shadow: 2px 2px 1px lightgrey;
+}
+.job dl:hover dt{
+    background-color: #F58E00;
+    color: #fff;
+}
+.job dl:hover dd{
+    border: 1px solid #F58E00;
+    opacity: .5;
 }
 .job dl dd{
     width: 100%;
     height: 185px;
     border-radius: 10px;
     overflow: hidden;
-    background: #009342;
+    background: #fff;
+    box-shadow: 2px 2px 1px lightgrey;
+}
+dd img{
+    width: 100% !important;
+    height: 100%;
 }
 .rightcont{
     width: 20%;
@@ -96,18 +117,21 @@
     height: 100%;
     padding: 30px 20px;
     text-align: center;
-
+    color: #fff;
+    font-weight: bold;
 }
 .rightcont ul li:nth-child(1){
     margin-bottom: 30px;
-    border-radius: 10px 30px 10px 30px;
-    right: -50px;
+    border-radius: 10px 30px 30px 30px;
+    right: -30px;
     opacity: 0;
+    background-color: #009342;
 }
 .rightcont ul li:nth-child(2){
-    border-radius: 30px 10px 30px 10px;
-    right: -50px;
+    border-radius: 30px 30px 30px 10px;
+    right: -30px;
     opacity: 0;
+    background-color: #47439a;
 }
 .rightcont ul li:nth-child(1) a::before{
     content: "";
@@ -131,7 +155,7 @@
     width: 100%;
     height: 600px;
     display: flex;
-    padding: 30px;
+    padding: 30px 0px;
 }
 .ftcont1{
     width: 40%;

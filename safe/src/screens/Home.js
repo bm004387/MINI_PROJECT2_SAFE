@@ -1,7 +1,7 @@
+import '../home.css';
 import Container from 'react-bootstrap/Container';
 import Carousel from 'react-bootstrap/Carousel';
 import React from 'react'
-import '../home.css';
 import $ from "jquery";
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
@@ -12,7 +12,7 @@ const Home = () => {
     <div className='main'>
         <div className='maintop'>
       <Container>
-          <div className='test'>
+          <div className='maincont'>
             <div className='topcont'>
               <ul>
                 <li><h4>나에게 필요한 안전교육은?</h4></li>
@@ -21,7 +21,7 @@ const Home = () => {
             <div className='job'>
               <dl className='job1'>
                 <dt>사업주</dt>
-                <dd></dd>
+                <dd><img src='./images/business man_icon.png'/></dd>
               </dl>
               <dl className='job2'>
                 <dt>근로자</dt>
@@ -82,10 +82,10 @@ const Home = () => {
           </Carousel>
             <div className='guide'>
               <div className='guide_item1'>
-                <p>테스트1</p>
+                <li><a>산업안전보건교육원 교육과정안내</a></li>
               </div>
               <div className='guide_item2'>
-                <p>테스트2</p>
+                <li><a>이수증 출력</a></li>
               </div>
             </div>
           </div>
@@ -132,6 +132,6 @@ $(function(){
   $(".job5").delay(500).animate({ opacity: 1, top: 0 }, 600, "swing")
   $(".job6").delay(600).animate({ opacity: 1, top: 0 }, 600, "swing")
   $(".rightcont ul li:nth-child(1)").delay(100).animate({ opacity: 1, right: 0}, 600, "swing")
-  $(".rightcont ul li:nth-child(2)").delay(400).animate({ opacity: 1, right: 0}, 600, "swing")
+  $(".rightcont ul li:nth-child(2)").delay(300).animate({ opacity: 1, right: 0}, 600, "swing")
   
 })

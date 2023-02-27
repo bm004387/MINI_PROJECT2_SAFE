@@ -1,5 +1,5 @@
 .container{
-    padding: 10px !important;
+    padding: 5px 10px 10px 10px !important;
 }
 .navbar{
     padding: 0 !important;
@@ -9,6 +9,9 @@
 }
 .header{
     border-bottom: 1px solid lightgray;
+}
+.py-5{
+    padding-top: 0 !important;
 }
 .logo{
     display: flex !important;
