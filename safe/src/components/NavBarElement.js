@@ -19,7 +19,7 @@ function NavBarElement() {
         <a href='#!'><img src="/images/icon/youtube_icon.svg" alt='유튜브 아이콘' title='유튜브로 바로가기'/></a>
         <a href='#!'><img src="/images/icon/instargram_icon.svg" alt='인스타그램 아이콘' title='인스타그램으로 바로가기'/></a>
       </div>
-      <div>
+      <div className='loginForm'>
         <a href='/login'>로그인</a> | 
        <a href='/register'>회원가입</a>
       </div>
@@ -34,6 +34,7 @@ function NavBarElement() {
             <Nav.Link href="/About">About</Nav.Link>
             <Nav.Link href="/Movie">Movie</Nav.Link>
             <Nav.Link href="/Faq">Faq</Nav.Link>
+            <Nav.Link href="/Locotion">Locotion</Nav.Link>
             <NavDropdown title="게시판" id="basic-nav-dropdown">
               <NavDropdown.Item href="/board">게시글 작성하기</NavDropdown.Item>
             </NavDropdown>

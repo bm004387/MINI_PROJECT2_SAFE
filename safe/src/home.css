@@ -8,6 +8,7 @@
 }
 .container{
     padding: 0 !important;
+    max-width: 100% !important;
 }
 .row{
     padding-left: 0 !important;
@@ -186,7 +187,7 @@ span.br{
     width: 100%;
     height: 600px;
     display: flex;
-    padding: 30px 0px;
+    padding: 30px 20px;
 }
 .ftcont1{
     width: 40%;
@@ -400,6 +401,11 @@ span.br{
         width: 100%;
         height: 60%;
     }
+    .ftcont2{
+        width: 100%;
+        margin-top: 50px;
+        padding: 0 !important;
+    }
     .carousel{
         width: 60% !important;
     }
@@ -418,11 +424,6 @@ span.br{
     }
     .guide_item2{
         height: 100%;
-    }
-    .ftcont2{
-        width: 100%;
-        margin-top: 50px;
-        padding: 0 30px !important;
     }
 }
 @media (min-width: 992px){
