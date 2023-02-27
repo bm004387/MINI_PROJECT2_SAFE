@@ -1,5 +1,6 @@
 *{
     list-style: none;
+    text-decoration: none !important;
 }
 @font-face{
     font-family: 'Binggrae';
@@ -84,7 +85,7 @@
     color: #fff;
 }
 .job dl:hover dd{
-    border: 1px solid #F58E00;
+    outline: 1px solid #F58E00;
     opacity: .5;
 }
 .job dl dd{
@@ -92,12 +93,25 @@
     height: 185px;
     border-radius: 10px;
     overflow: hidden;
-    background: #fff;
     box-shadow: 2px 2px 1px lightgrey;
 }
-dd img{
-    width: 100% !important;
-    height: 100%;
+.job1 dd{
+    background: #fff url(./need-person01.png) no-repeat 50% 150%;
+}
+.job2 dd{
+    background: #fff url(./need-person02.png) no-repeat 50% 150%;
+}
+.job3 dd{
+    background: #fff url(./need-person03.png) no-repeat 50% -650%;
+}
+.job4 dd{
+    background: #fff url(./need-person04.png) no-repeat 50% 500%;
+}
+.job5 dd{
+    background: #fff url(./need-person05.png) no-repeat 50% -150%;
+}
+.job6 dd{
+    background: #fff url(./need-person06.png) no-repeat 50% 160%;
 }
 .rightcont{
     width: 20%;
@@ -131,7 +145,7 @@ dd img{
     border-radius: 30px 30px 30px 10px;
     right: -30px;
     opacity: 0;
-    background-color: #47439a;
+    background-color: #4b4980;
 }
 .rightcont ul li:nth-child(1) a::before{
     content: "";
@@ -173,18 +187,68 @@ dd img{
     height: 20%;
     width: 100%;
     padding-top: 20px;
+    position: relative;
 }
 .guide_item1{
     width: 100%;
     height: 100%;
     margin-right: 20px;
-    background-color: aquamarine;
+    background-color: #4b4980;
     border-radius: 10px 10px 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guide_item1 li{
+    width: 100%;
+    height: 100%;
+}
+.guide_item1 li a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: 'Binggrae';
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+.guide_item1 li:nth-child(1) a::before{
+    content: "";
+    background-image: url(./company.png);
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
 }
 .guide_item2{
     width: 100%;
-    background-color: blueviolet;
+    background-color: rgb(111, 205, 224);
     border-radius: 10px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guide_item2 li{
+    width: 100%;
+    height: 100%;
+}
+.guide_item2 li a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: 'Binggrae';
+}
+.guide_item2 li:nth-child(1) a::before{
+    content: "";
+    background-image: url(./company.png);
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
 }
 .carousel-inner{
     border-radius: 20px 20px 0 0;

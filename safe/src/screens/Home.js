@@ -21,7 +21,7 @@ const Home = () => {
             <div className='job'>
               <dl className='job1'>
                 <dt>사업주</dt>
-                <dd><img src='./images/business man_icon.png'/></dd>
+                <dd></dd>
               </dl>
               <dl className='job2'>
                 <dt>근로자</dt>
@@ -82,10 +82,10 @@ const Home = () => {
           </Carousel>
             <div className='guide'>
               <div className='guide_item1'>
-                <li><a>산업안전보건교육원 교육과정안내</a></li>
+                <li><a href='#' className='ratio'>산업안전보건교육원<br></br> 교육과정안내</a></li>
               </div>
               <div className='guide_item2'>
-                <li><a>이수증 출력</a></li>
+                <li><a href='#' className='ratio'>이수증 출력</a></li>
               </div>
             </div>
           </div>

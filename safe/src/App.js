@@ -42,7 +42,7 @@ export default class App extends React.Component {
 		return (
     <>
 			<Container>
-				<Row className='py-5'>
+				<Row>
 					<Col md={12}>
 						{/* 라우팅 */}
           
