@@ -21,7 +21,7 @@ const Home = () => {
             <div className='job'>
               <dl className='job1'>
                 <dt>사업주</dt>
-                <dd><img src='./images/business man_icon.png'/></dd>
+                <dd style={{backgroundImage:'url(/images/need-person01.png)'}}></dd>
               </dl>
               <dl className='job2'>
                 <dt>근로자</dt>

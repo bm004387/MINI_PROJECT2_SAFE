@@ -95,9 +95,8 @@
     background: #fff;
     box-shadow: 2px 2px 1px lightgrey;
 }
-dd img{
-    width: 100% !important;
-    height: 100%;
+.job2{
+    background: #fff url(../public/images/need-person01.png) no-repeat 50% 150%;
 }
 .rightcont{
     width: 20%;
