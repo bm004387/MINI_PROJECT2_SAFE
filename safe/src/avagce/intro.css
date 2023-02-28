@@ -93,4 +93,55 @@
 h2{
     font-family: 'Binggrae';
 }
+@media (max-width: 991.98px){
+    .card-body{
+        padding: .7rem !important;
+    }
+    h2{
+        font-size: 1.5rem !important;
+    }
+    .card-title{
+        font-size: 14px !important;
+    }
+    .card-text{
+        font-size: 13px !important;
+    }
+    .btn{
+        font-size: 13px !important;
+    }
+}
+@media (max-width: 768px){
+    h2{
+        font-size: 1.2rem !important;
+    }
+    .card-body{
+        padding: .4rem !important;
+    }
+    .card-title{
+        font-size: 13px !important;
+    }
+    .card-text{
+        font-size: 12px !important;
+    }
+    .btn{
+        font-size: 12px !important;
+    }
+}
+@media (max-width: 576px){
+    .safedu{
+        padding: 15px;
+    }
+    h2{
+        font-size: 1rem !important;
+    }
+    .card-text{
+        display: none;
+    }
+    .card-title{
+        font-size: 10px !important;
+    }
+    .btn{
+        font-size: 10px !important;
+    }
+}
 
