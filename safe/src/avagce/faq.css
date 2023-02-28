@@ -1,11 +1,25 @@
+@font-face{
+    font-family: 'Binggrae';
+    src: url(../Binggrae-Bold.ttf) format('truetype');
+}
 .accordion-button{
     font-size: 19px;
     font-weight: bold;
-    background-color: #faebd7;
+    background-color: #fff;
+    font-family: 'Binggrae';
 }
 
 .accordion-body{
-    background-color: rgb(145, 255, 145);
+    background-color: lightgray;
     font-size: 17px;
     font-weight: bolder;
+}
+.accordion{
+    margin-top: 50px;
+    padding: 20px 30px;
+}
+.accordion h1{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Binggrae';
 }

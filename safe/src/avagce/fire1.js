@@ -7,9 +7,11 @@ class Movie extends React.Component{
     render(){
         return(
               <>
+              <div className="mvName">
                 <h1>나침반 5분 안전교육
                 <Button variant="success" href="/Movie">뒤로가기</Button>
                 </h1>
+                </div>
                 <div className="player">
                   <ReactPlayer
                     url={process.env.PUBLIC_URL + '/images/movie/fire1.mp4'}
