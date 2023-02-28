@@ -230,8 +230,6 @@ span.br{
     color: #fff;
     font-family: 'Binggrae';
     font-size: 16px;
-    width: 100%;
-    height: 100%;
 }
 .guide_item1 li:nth-child(1) a::before{
     content: "";
@@ -466,6 +464,24 @@ span.br{
         font-size: 10px !important;
         padding: 0 !important;
     }
+    .guide_item1 li a{
+        font-size: 9px;
+    }
+    .guide_item2 li a{
+        font-size: 9px;
+    }
+    .guide_item1 li:nth-child(1) a::before {
+        content: "";
+        background-size: 30px 30px;
+        width: 30px;
+        height: 30px;
+    }
+    .guide_item2 li:nth-child(1) a::before {
+        content: "";
+        background-size: 30px 30px;
+        width: 30px;
+        height: 30px;
+    }
     .container{
         max-width: 1140px !important;
     }
@@ -473,22 +489,31 @@ span.br{
         font-size: 12px;
     }
     .rightcont ul li a {
-        font-size: 14px !important;
+        font-size: 8px !important;
     }
     .rightcont ul li:nth-child(1) a::before {
-        margin: 0 !important;
-        background-size: 40px 40px;
-        width: 40px;
-        height: 40px;
+        margin: 0 5px 0 0 !important;
+        background-size: 20px 20px;
+        width: 20px;
+        height: 20px;
     }
     .rightcont ul li:nth-child(2) a::before {
-        margin: 0 !important;
-        background-size: 40px 40px;
-        width: 40px;
-        height: 40px;
+        margin: 0 5px 0 0 !important;
+        background-size: 20px 20px;
+        width: 20px;
+        height: 20px;
     }
     .ftcont1{
         height: 40% !important;
+    }
+    .notice li:first-child {
+        padding: 20px 10px;
+        font-size: 13px;
+        background-color: lightgray;
+        margin-bottom: 20px;
+    }
+    .notice li{
+        font-size: 12px;
     }
 }
 @media (min-width: 576px){

@@ -12,10 +12,14 @@ import SighUp from './screens/SighUp';
 import NavBarElement from './components/NavBarElement';
 import Intro from './avagce/introduce';
 import Movie from './avagce/movie';
-import Movie1 from './avagce/movie1';
-import Movie2 from './avagce/movie2';
-import Movie3 from './avagce/movie3';
-import Movie4 from './avagce/movie4';
+import EarthQuake1 from './avagce/earthquake1';
+import EarthQuake2 from './avagce/earthquake2';
+import EarthQuake3 from './avagce/earthquake3';
+import EarthQuake4 from './avagce/earthquake4';
+import Fire1 from './avagce/fire1';
+import Fire2 from './avagce/fire2';
+import Fire3 from './avagce/fire3';
+import Fire4 from './avagce/fire4';
 import Faq from './avagce/Faq';
 import Location from './screens/Location';
 
@@ -62,10 +66,14 @@ export default class App extends React.Component {
                   <Route exact path="/" component={Home}/>
               <Route  exact path="/About" component={Intro}/>
               <Route  exact path="/Movie" component={Movie}/>
-              <Route  exact path="/Movie1" component={Movie1}/>
-              <Route  exact path="/Movie2" component={Movie2}/>
-              <Route  exact path="/Movie3" component={Movie3}/>
-              <Route  exact path="/Movie4" component={Movie4}/>
+              <Route  exact path="/EarthQuake1" component={EarthQuake1}/>
+              <Route  exact path="/EarthQuake2" component={EarthQuake2}/>
+              <Route  exact path="/EarthQuake3" component={EarthQuake3}/>
+              <Route  exact path="/EarthQuake4" component={EarthQuake4}/>
+              <Route  exact path="/Fire1" component={Fire1}/>
+              <Route  exact path="/Fire2" component={Fire2}/>
+              <Route  exact path="/Fire3" component={Fire3}/>
+              <Route  exact path="/Fire4" component={Fire4}/>
               <Route  exact path="/Projects" component={Projects}/>
               <Route  exact path="/Faq" component={Faq}/>
               <Route  exact path="/Location" component={Location}/>

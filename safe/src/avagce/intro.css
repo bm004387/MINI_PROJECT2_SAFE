@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'Binggrae';
+    src: url(../Binggrae-Bold.ttf) format('truetype');
+}
+
 .intro_img01{
     text-align: center;
 }
@@ -59,21 +64,95 @@
     text-align: center;
     font: normal normal normal 14px/23px 'Century Gothic', sans-serif;
 }
-
-.player{
-    position: relative;
-    padding-top: 5%;
-    padding-left: 25%;
+h1{
+    font-family: 'Binggrae';
+    padding: 50px 20px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.react-player {
-  position: absolute;
-  top: 0;
-  left: 0;
-  }
-
 
 .event_box_wap>h1{
     text-align: center;
 
+}
+.safedu{
+    padding: 30px;
+}
+.quake{
+    margin-bottom: 50px;
+}
+.fire{
+    margin-bottom: 50px;
+}
+.player{
+    margin: 50px 20px;
+}
+h2{
+    font-family: 'Binggrae';
+}
+@media (max-width: 991.98px){
+    .card-body{
+        padding: .7rem !important;
+    }
+    h1{
+        font-size: 1.7rem;
+        padding: 30px 20px;
+    }
+    h2{
+        font-size: 1.5rem !important;
+    }
+    .card-title{
+        font-size: 14px !important;
+    }
+    .card-text{
+        font-size: 13px !important;
+    }
+    .btn{
+        font-size: 13px !important;
+    }
+}
+@media (max-width: 768px){
+    h1{
+        font-size: 1.5rem !important;
+        padding: 30px 20px;
+    }
+    h2{
+        font-size: 1.2rem !important;
+    }
+    .card-body{
+        padding: .4rem !important;
+    }
+    .card-title{
+        font-size: 13px !important;
+    }
+    .card-text{
+        font-size: 12px !important;
+    }
+    .btn{
+        font-size: 12px !important;
+    }
+}
+@media (max-width: 576px){
+    .safedu{
+        padding: 15px;
+    }
+    h1{
+        font-size: 1rem !important;
+        padding: 20px 20px;
+    }
+    h2{
+        font-size: 1rem !important;
+    }
+    .card-text{
+        display: none;
+    }
+    .card-title{
+        font-size: 10px !important;
+    }
+    .btn{
+        font-size: 10px !important;
+    }
 }
 
