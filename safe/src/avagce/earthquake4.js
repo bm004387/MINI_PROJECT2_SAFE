@@ -8,12 +8,14 @@ class Movie extends React.Component{
     render(){
         return(
               <>
-              <h1>지진 대피법
+              <div className="mvName">
+              <h1>지진 발생 시 어떡해야 할까?
               <Button variant="success" href="/Movie">뒤로가기</Button>
               </h1>
+              </div>
               <div className="player">
                     <ReactPlayer
-                      url={process.env.PUBLIC_URL + '/images/movie/movie2.mp4'}
+                      url={process.env.PUBLIC_URL + '/images/movie/earthquake4.mp4'}
                       width='100%'
                       height='100%'
                       playing={true}
