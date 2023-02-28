@@ -4,8 +4,8 @@ import './faq.css';
 function Faq() {
   return (
     <>
-    <h1>FAQ</h1>
       <Accordion defaultActiveKey="">
+      <h1>FAQ</h1>
         <Accordion.Item eventKey="0">
           <Accordion.Header>Q.1 특수형태근로종사자 안전보건교육 의무 시행 알림</Accordion.Header>
           <Accordion.Body>
