@@ -33,25 +33,33 @@ class Intro extends React.Component{
           <Col sm={4}>
 
                           <div className="imgwap mission"><FontAwesomeIcon icon={faFireExtinguisher} className="icon" /></div>
+                          <h2>Sacrifice</h2>
                           <h2>희생</h2>
+                          <br></br>
                           <p>누구도 예상하지 못한 곳에서 피해를 입은 사람들에게 희망을 전달합니다.</p>
           </Col>       
          
           <Col sm={4}>
                           <div className="imgwap product"><FontAwesomeIcon icon={faHelmetSafety} className="icon" /></div>
+                          <h2>Adversity</h2>
                           <h2>역경</h2>
+                          <br></br>
                           <p>신속하게 재난 및 사고가 일어난 정보를 제공하여 안전을 확보합니다.</p>
            </Col>
          
            <Col sm={4}>
                           <div className="imgwap testimonial"><FontAwesomeIcon icon={faPerson} className="icon" /></div>
+                          <h2>Life</h2>
                           <h2>생명</h2>
+                          <br></br>
                           <p>위급한 상황에서 최대한 안전하게 구조를 실시하여 생명을 지킵니다.</p>
                </Col>
                <Col sm={4}>
                           <div className="imgwap statistic"><FontAwesomeIcon icon={faHandsPraying} className="icon" /></div>
+                          <h2>Everyday</h2>
                           <h2>일상</h2>
-                          <p>사람들이 재난을 극복하고 일상생활로 돌아갈수 있도록 지원합니다.</p>
+                          <br></br>
+                          <p>사람들이 재난을 극복하고 일상생활로 돌아갈 수 있도록 지원합니다.</p>
             </Col>
                         
                        
