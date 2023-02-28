@@ -35,6 +35,9 @@
 
 // export default Location;
 
+import '../css/location.css';
+
+
 
 /*global kakao */
 import React, { useEffect } from "react";
@@ -67,5 +70,5 @@ export default function Map() {
     marker.setMap(map);
   };
 
-  return <div id="map" style={{ width: "50vw", height: "50vh" }}></div>;
+  return <div id="map" style={{ width: "40vw", height: "40vh" }}></div>;
 }
