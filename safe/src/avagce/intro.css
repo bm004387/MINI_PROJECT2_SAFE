@@ -64,7 +64,7 @@
     text-align: center;
     font: normal normal normal 14px/23px 'Century Gothic', sans-serif;
 }
-h1{
+.mvName h1{
     font-family: 'Binggrae';
     padding: 50px 20px;
     border-bottom: 1px solid lightgray;
@@ -89,18 +89,24 @@ h1{
 .player{
     margin: 50px 20px;
 }
-h2{
+.quake h2{
+    font-family: 'Binggrae';
+}
+.fire h2{
     font-family: 'Binggrae';
 }
 @media (max-width: 991.98px){
     .card-body{
         padding: .7rem !important;
     }
-    h1{
+    .mvName h1{
         font-size: 1.7rem;
         padding: 30px 20px;
     }
-    h2{
+    .quake h2{
+        font-size: 1.5rem !important;
+    }
+    .fire h2{
         font-size: 1.5rem !important;
     }
     .card-title{
@@ -114,11 +120,14 @@ h2{
     }
 }
 @media (max-width: 768px){
-    h1{
+    .mvName h1{
         font-size: 1.5rem !important;
         padding: 30px 20px;
     }
-    h2{
+    .quake h2{
+        font-size: 1.2rem !important;
+    }
+    .fire h2{
         font-size: 1.2rem !important;
     }
     .card-body{
@@ -138,11 +147,14 @@ h2{
     .safedu{
         padding: 15px;
     }
-    h1{
+    .mvName h1{
         font-size: 1rem !important;
         padding: 20px 20px;
     }
-    h2{
+    .quake h2{
+        font-size: 1rem !important;
+    }
+    .fire h2{
         font-size: 1rem !important;
     }
     .card-text{
