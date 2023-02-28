@@ -1,4 +1,5 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
 
 import './intro.css';
 import ReactPlayer from 'react-player'
@@ -7,7 +8,10 @@ class Movie extends React.Component{
     render(){
         return(
               <>
-              <div>
+              <h1>지진 대피법
+              <Button variant="success" href="/Movie">뒤로가기</Button>
+              </h1>
+              <div className="player">
                     <ReactPlayer
                       url={process.env.PUBLIC_URL + '/images/movie/movie2.mp4'}
                       width='100%'

@@ -57,14 +57,14 @@ function Movie() {
               <Card.Img variant="top" src={fire1} />
               <Card.Body>
                 <Card.Title>나침반 5분 안전교육</Card.Title>
-                <Button variant="primary" href='/movie1'>교육 영상 시청하기</Button>
+                <Button variant="primary" href='/fire1'>교육 영상 시청하기</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: '15rem' }}>
               <Card.Img variant="top" src={fire2}/>
               <Card.Body>
                 <Card.Title>겨울철 소방 안전교육</Card.Title>
-                <Button variant="primary" href='/movie2'>교육 영상 시청하기</Button>
+                <Button variant="primary" href='/fire2'>교육 영상 시청하기</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: '15rem' }}>
@@ -74,14 +74,14 @@ function Movie() {
                 <Card.Text>
                   화재 발생 시 장비 사용 훈련, 대피 동선 등 안전교육
                 </Card.Text>
-                <Button variant="primary" href='/movie3'>교육 영상 시청하기</Button>
+                <Button variant="primary" href='/fire3'>교육 영상 시청하기</Button>
               </Card.Body>
             </Card>
             <Card style={{ width: '15rem' }}>
               <Card.Img variant="top" src={fire4}/>
               <Card.Body>
                 <Card.Title>소방교육 및 훈련방법</Card.Title>
-                <Button variant="primary" href='/movie4'>교육 영상 시청하기</Button>
+                <Button variant="primary" href='/fire4'>교육 영상 시청하기</Button>
               </Card.Body>
             </Card>
           </div>

@@ -16,6 +16,10 @@ import Movie1 from './avagce/movie1';
 import Movie2 from './avagce/movie2';
 import Movie3 from './avagce/movie3';
 import Movie4 from './avagce/movie4';
+import Fire1 from './avagce/fire1';
+import Fire2 from './avagce/fire2';
+import Fire3 from './avagce/fire3';
+import Fire4 from './avagce/fire4';
 import Faq from './avagce/Faq';
 import Location from './screens/Location';
 
@@ -66,6 +70,10 @@ export default class App extends React.Component {
               <Route  exact path="/Movie2" component={Movie2}/>
               <Route  exact path="/Movie3" component={Movie3}/>
               <Route  exact path="/Movie4" component={Movie4}/>
+              <Route  exact path="/Fire1" component={Fire1}/>
+              <Route  exact path="/Fire2" component={Fire2}/>
+              <Route  exact path="/Fire3" component={Fire3}/>
+              <Route  exact path="/Fire4" component={Fire4}/>
               <Route  exact path="/Projects" component={Projects}/>
               <Route  exact path="/Faq" component={Faq}/>
               <Route  exact path="/Location" component={Location}/>

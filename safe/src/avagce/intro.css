@@ -64,18 +64,14 @@
     text-align: center;
     font: normal normal normal 14px/23px 'Century Gothic', sans-serif;
 }
-
-.player{
-    position: relative;
-    padding-top: 5%;
-    padding-left: 25%;
+h1{
+    font-family: 'Binggrae';
+    padding: 50px 20px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.react-player {
-  position: absolute;
-  top: 0;
-  left: 0;
-  }
-
 
 .event_box_wap>h1{
     text-align: center;
@@ -90,12 +86,19 @@
 .fire{
     margin-bottom: 50px;
 }
+.player{
+    margin: 50px 20px;
+}
 h2{
     font-family: 'Binggrae';
 }
 @media (max-width: 991.98px){
     .card-body{
         padding: .7rem !important;
+    }
+    h1{
+        font-size: 1.7rem;
+        padding: 30px 20px;
     }
     h2{
         font-size: 1.5rem !important;
@@ -111,6 +114,10 @@ h2{
     }
 }
 @media (max-width: 768px){
+    h1{
+        font-size: 1.5rem !important;
+        padding: 30px 20px;
+    }
     h2{
         font-size: 1.2rem !important;
     }
@@ -130,6 +137,10 @@ h2{
 @media (max-width: 576px){
     .safedu{
         padding: 15px;
+    }
+    h1{
+        font-size: 1rem !important;
+        padding: 20px 20px;
     }
     h2{
         font-size: 1rem !important;
