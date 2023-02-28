@@ -34,7 +34,7 @@ function NavBarElement() {
             <Nav.Link href="/About">About</Nav.Link>
             <Nav.Link href="/Movie">Movie</Nav.Link>
             <Nav.Link href="/Faq">Faq</Nav.Link>
-            <Nav.Link href="/Locotion">Locotion</Nav.Link>
+            <Nav.Link href="/Location">Location</Nav.Link>
             <NavDropdown title="게시판" id="basic-nav-dropdown">
               <NavDropdown.Item href="/board">게시글 작성하기</NavDropdown.Item>
             </NavDropdown>
