@@ -1,8 +1,184 @@
+@font-face{
+    font-family: 'Binggrae';
+    src: url(../Binggrae-Bold.ttf) format('truetype');
+}
+.location{
+    width: 100%;
+    height: 100%;
+    padding: 50px 20px;
+}
+.location h1{
+    text-align: center;
+    font-family: 'Binggrae';
+}
 #map{
-	/* max-width: 80%;
-    height: 400px;  */
-    margin: 0 auto; 
-    margin-top: 100px;
-    padding: 50px;
+    margin: 100px auto; 
     background: #ffffff;
+    width: 100%;
+    height: 60vh;
+}
+.information{
+    width: 100%;
+    padding: 50px;
+    border-top: 2px solid lightgray;
+}
+.information h2{
+    font-family: 'Binggrae';
+}
+.information h2 small{
+    font-family: 'Segoe UI';
+}
+.information h3{
+    font-family: 'Binggrae';
+}
+.information h3 small{
+    font-family: 'Segoe UI';
+}
+.traffic{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: wrap;
+    padding: 30px 0;
+    border-top: 2px solid lightgray;
+}
+.traffics{
+    width: calc(100% /2);
+    height: 100%;
+    padding: 50px;
+}
+.transportation{
+    display: flex;
+    margin-bottom: 50px;
+}
+.transportation img{
+    width: 100px;
+    height: 100px;
+}
+.transportation h2{
+    font-family: 'Binggrae';
+}
+.transportation h2 small{
+    font-family: 'Segoe UI';
+}
+@media screen and (max-width: 1200px){
+    #map{
+        margin: 50px auto;
+    }
+    .traffics{
+        padding: 30px;
+    }
+    .location h1{
+        font-size: 2rem !important;
+    }
+    .information{
+        padding: 30px;
+    }
+    .information h2{
+        font-size: 1.7rem;
+    }
+    .information h3{
+        font-size: 1.5rem;
+    }
+    .transportation h2{
+        font-size: 1.7rem;
+    }
+    small{
+        font-size: 1.5rem !important;
+    }
+    .transportation img{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media (max-width: 991.98px){
+    #map{
+        height: 40vh;
+    }
+    .information{
+        padding: 20px;
+    }
+    .traffics{
+        padding: 20px;
+    }
+    .location h1{
+        font-size: 1.7rem !important;
+    }
+    .information h2{
+        font-size: 1.5rem;
+    }
+    .information h3{
+        font-size: 1.3rem;
+    }
+    .transportation h2{
+        font-size: 1.5rem;
+    }
+    small{
+        font-size: 1.3rem !important;
+    }
+    .transportation img{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media screen and (max-width: 768px){
+    #map{
+        height: 40vh;
+    }
+    .information{
+        padding: 10px;
+    }
+    .traffics{
+        padding: 10px;
+    }
+    .location h1{
+        font-size: 1.5rem !important;
+    }
+    .information h2{
+        font-size: 1.3rem;
+    }
+    .information h3{
+        font-size: 1.1rem;
+    }
+    .transportation h2{
+        font-size: 1.3rem;
+    }
+    small{
+        font-size: 1.1rem !important;
+    }
+    .transportation img{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: 576px){
+    #map{
+        height: 30vh;
+        margin: 30px auto;
+    }
+    .information{
+        padding: 10px;
+    }
+    .traffics{
+        padding: 10px;
+    }
+    .location h1{
+        font-size: 1.3rem !important;
+    }
+    .information h2{
+        font-size: 1rem;
+    }
+    .information h3{
+        font-size: .7rem;
+    }
+    .transportation h2{
+        font-size: 1rem;
+    }
+    small{
+        font-size: .7rem !important;
+    }
+    .transportation img{
+        width: 50px;
+        height: 50px;
+    }
 }
