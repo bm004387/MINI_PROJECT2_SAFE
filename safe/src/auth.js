@@ -1,6 +1,8 @@
 import axios from 'axios'
-
 const api = 'http://localhost:3000' // api 주소 지정
+//const api = 'http://192.168.0.185:3000' // api 주소 지정
+// 핸드폰으로 접속할때는 공유기를 통하기 때문에 localhost:3000 에서는 로그인이 제대로 동작하지 않는다
+// 아이피로 공유기에서 받은 IP를 정확하게 지정해주면 로그인 동작이 정상적으로 작동합니다.
 
 // 기본 리턴
 export default {
