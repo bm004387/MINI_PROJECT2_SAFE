@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'Binggrae';
+    src: url(../Binggrae-Bold.ttf) format('truetype');
+}
+
 .intro_img01{
     text-align: center;
 }
@@ -75,5 +80,14 @@
 .event_box_wap>h1{
     text-align: center;
 
+}
+.safedu{
+    padding: 30px;
+}
+.quake{
+    margin-bottom: 50px;
+}
+h2{
+    font-family: 'Binggrae';
 }
 
