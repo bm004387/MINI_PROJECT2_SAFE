@@ -10,9 +10,12 @@ import Projects from './screens/Projects';
 //import Login from './screens/Login';
 import SighUp from './screens/SighUp';
 import NavBarElement from './components/NavBarElement';
-import Footer from './components/Footer';
 import Intro from './avagce/introduce';
 import Movie from './avagce/movie';
+import Movie1 from './avagce/movie1';
+import Movie2 from './avagce/movie2';
+import Movie3 from './avagce/movie3';
+import Movie4 from './avagce/movie4';
 import Faq from './avagce/Faq';
 import Location from './screens/Location';
 
@@ -22,6 +25,7 @@ import Board from './views/Board';
 import Form from './views/Form';
 import View from './views/View';
 import Login from './views/Login';
+
 // 인증 모듈
 import auth from './auth';
 // 인증 확인해서 로그인 안되었을 경우 /login으로 리다이렉션하는 커스텀 함수
@@ -58,10 +62,15 @@ export default class App extends React.Component {
                   <Route exact path="/" component={Home}/>
               <Route  exact path="/About" component={Intro}/>
               <Route  exact path="/Movie" component={Movie}/>
+              <Route  exact path="/Movie1" component={Movie1}/>
+              <Route  exact path="/Movie2" component={Movie2}/>
+              <Route  exact path="/Movie3" component={Movie3}/>
+              <Route  exact path="/Movie4" component={Movie4}/>
               <Route  exact path="/Projects" component={Projects}/>
               <Route  exact path="/Faq" component={Faq}/>
               <Route  exact path="/Location" component={Location}/>
               <Route exact path="/login" component={Login}/>
+              
               <PrivateRoute exact path="/SighUp" component={SighUp}/>
 							<PrivateRoute exact path='/board' component={Board} />
 							<PrivateRoute exact path='/add' component={Form} />
@@ -70,7 +79,6 @@ export default class App extends React.Component {
 							
 						</Switch>
 
-            <Footer/>
             </Col>
 				</Row>
 			</Container>
