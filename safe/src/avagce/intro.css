@@ -23,6 +23,13 @@
     margin-bottom: 250px;
     margin: 100px;
 }
+.Test{
+    background-image: url(../parallax.jpg);
+    background-size: 100%;
+    
+    width: 100%;
+    height: 500px;
+}
 
 .about02{
     margin-bottom: 100px;
