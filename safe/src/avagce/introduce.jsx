@@ -29,13 +29,11 @@ export default function Intro() {
 
     return (
         <>
-            <Container className="Con1">
                 <div className="about">
                     <Image src="images/intro/about.jpg" class="img-responsive" width={1000} alt="about" fluid />
                 </div>
                 <Row md={4} className="Test" style={{
                     backgroundPositionY: position / -4,
-
                 }}>
                     <Col sm={4}>
 
@@ -67,7 +65,6 @@ export default function Intro() {
                         <p>사람들이 재난을 극복하고 일상생활로 돌아갈 수 있도록 지원합니다.</p>
                     </Col>
                 </Row>
-            </Container>
             <Container className="Con2">
                 <div className="about02">
                     <Image src="images/intro/about02.jpg" class="img-responsive" width={1000} alt="about02" fluid />
