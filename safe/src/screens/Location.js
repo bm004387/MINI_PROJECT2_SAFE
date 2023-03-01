@@ -3,6 +3,7 @@ import Bus from '../locationIcon/bus.svg'
 import Subway from '../locationIcon/subway.svg'
 import Nav from '../locationIcon/navigation.svg'
 import Park from '../locationIcon/parking.svg'
+import { Container } from 'react-bootstrap';
 
 
 
@@ -38,50 +39,52 @@ export default function Map() {
   };
 
   return (
-    <div className='location'>
-      <h1>찾아오시는 길</h1>
-    <div id="map"/>
-      <div className="information">
-        <h2>INFORMATION</h2>
-        <h2><small>SAFE 정보</small></h2><br></br>
-            <h3>Address</h3>
-            <h3><small>서울시 구로구 경인로 557 (구로동 606-4)</small></h3>
-            <h3>Tel</h3>
-            <h3><small>02-0000-0000</small></h3>
-            <h3>Fax</h3>
-            <h3><small>02-0000-0001</small></h3>
+    <Container>
+      <div className='location'>
+        <h1>찾아오시는 길</h1>
+      <div id="map"/>
+        <div className="information">
+          <h2>INFORMATION</h2>
+          <h2><small>SAFE 정보</small></h2><br></br>
+              <h3>Address</h3>
+              <h3><small>서울시 구로구 경인로 557 (구로동 606-4)</small></h3>
+              <h3>Tel</h3>
+              <h3><small>02-0000-0000</small></h3>
+              <h3>Fax</h3>
+              <h3><small>02-0000-0001</small></h3>
+        </div>
+        <div className='traffic'>
+          <div className='traffics'>
+            <div className='transportation'>
+              <img src={Bus}/>
+              <h2>버스</h2>
+            </div>
+            <h2><small>구로역1호선<br></br>③번출구 도보 3분거리</small></h2>
+          </div>
+          <div className='traffics'>
+            <div className='transportation'>
+              <img src={Subway}/>
+              <h2>지하철</h2>
+            </div>
+            <h2><small>구로역,구로기계공구상가(17147)정류장 하차 <br></br> 간선(파란)버스 : 571, 654</small></h2>
+          </div>
+          <div className='traffics'>
+            <div className='transportation'>
+              <img src={Nav}/>
+              <h2>네비게이션</h2>
+            </div>
+            <h2><small>구로역 "SAFE 교육센터" 검색</small></h2>
+          </div>
+          <div className='traffics'>
+            <div className='transportation'>
+            <img src={Park}/>
+            <h2>주차안내</h2>
+            </div>
+            <h2><small>상가 지상 1층 주차장 이용</small></h2>
+          </div>
+        </div>
       </div>
-      <div className='traffic'>
-        <div className='traffics'>
-          <div className='transportation'>
-            <img src={Bus}/>
-            <h2>버스</h2>
-          </div>
-          <h2><small>구로역1호선<br></br>③번출구 도보 3분거리</small></h2>
-        </div>
-        <div className='traffics'>
-          <div className='transportation'>
-            <img src={Subway}/>
-            <h2>지하철</h2>
-          </div>
-          <h2><small>구로역,구로기계공구상가(17147)정류장 하차 <br></br> 간선(파란)버스 : 571, 654</small></h2>
-        </div>
-        <div className='traffics'>
-          <div className='transportation'>
-            <img src={Nav}/>
-            <h2>네비게이션</h2>
-          </div>
-          <h2><small>구로역 "SAFE 교육센터" 검색</small></h2>
-        </div>
-        <div className='traffics'>
-          <div className='transportation'>
-          <img src={Park}/>
-          <h2>주차안내</h2>
-          </div>
-          <h2><small>상가 지상 1층 주차장 이용</small></h2>
-        </div>
-      </div>
-    </div>
+    </Container>
 
 
   );
