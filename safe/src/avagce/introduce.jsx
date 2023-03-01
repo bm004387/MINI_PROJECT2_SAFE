@@ -9,8 +9,6 @@ import { faHelmetSafety } from "@fortawesome/free-solid-svg-icons";
 import { faPerson } from "@fortawesome/free-solid-svg-icons";
 import { faHandsPraying } from "@fortawesome/free-solid-svg-icons";
 import Image from 'react-bootstrap/Image';
-import Movie from './movie';
-import { useNavigate } from 'react-router-dom';
 import './intro.css';
 
 
@@ -19,6 +17,7 @@ export default function Intro() {
     const [position, setPosition] = useState(0);
 
     function onScroll(){
+        console.log(window.scrollY)
         setPosition(window.scrollY);
     }
     useEffect(() => {
@@ -31,16 +30,13 @@ export default function Intro() {
     return (
         <>
             <Container className="Con1">
-                <div className="Test" style={{
-                    backgroundPositionY: position /5,
-
-                }}>
-                    <div>Welcome</div>
-                </div>
                 <div className="about">
                     <Image src="images/intro/about.jpg" class="img-responsive" width={1000} alt="about" fluid />
                 </div>
-                <Row md={4}>
+                <Row md={4} className="Test" style={{
+                    backgroundPositionY: position / -4,
+
+                }}>
                     <Col sm={4}>
 
                         <div className="imgwap mission"><FontAwesomeIcon icon={faFireExtinguisher} className="icon" /></div>

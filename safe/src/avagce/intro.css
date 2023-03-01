@@ -2,7 +2,9 @@
     font-family: 'Binggrae';
     src: url(../Binggrae-Bold.ttf) format('truetype');
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .intro_img01{
     text-align: center;
 }
@@ -25,9 +27,8 @@
 }
 .Test{
     background-image: url(../parallax.jpg);
-    background-size: 100%;
+    background-size: 100% ;
     
-    width: 100%;
     height: 500px;
 }
 
