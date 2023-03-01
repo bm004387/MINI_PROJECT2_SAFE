@@ -72,7 +72,7 @@ export default function Intro() {
                     <Image src="images/intro/about02.jpg" className="img-responsive" width={1000} alt="about02" fluid />
                 </div>                                       
                 <Row md={2}>
-                    <Col sm={10}>
+                    <Col sm={12}>
                         <div className="event_box_wap event_animate_left">
                             <div className="intro_img">
                                 <Image src="images/intro/intro01.jpg" class="img-responsive" alt="intro_img01" fluid />
@@ -82,7 +82,7 @@ export default function Intro() {
                             </div>
                         </div>
                     </Col>
-                    <Col sm={10}>
+                    <Col sm={12}>
                         <div className="event_box_wap event_animate_right">
                             <div className="intro_img">
                                 <Image src="images/intro/intro02.jpg" class="img-responsive" alt="intro_img02" fluid />
@@ -94,7 +94,7 @@ export default function Intro() {
                     </Col>
                 </Row>
                 <Row md={2}>
-                    <Col sm={10}>
+                    <Col sm={12}>
                         <div className="event_box_wap event_animate_left">
                             <div className="intro_img">
                                 <Image src="images/intro/intro03.jpg" class="img-responsive" alt="" fluid />
@@ -104,7 +104,7 @@ export default function Intro() {
                             <h1>재난 구호단</h1>
                         </div>
                     </Col>
-                    <Col sm={10}>
+                    <Col sm={12}>
                         <div className="event_box_wap event_animate_right">
                             <div className="intro_img">
                                 <Image src="images/intro/intro04.jpg" class="img-responsive" alt="" fluid />
