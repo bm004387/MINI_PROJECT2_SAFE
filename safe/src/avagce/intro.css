@@ -2,75 +2,41 @@
     font-family: 'Binggrae';
     src: url(../Binggrae-Bold.ttf) format('truetype');
 }
-html {
+html body{
     scroll-behavior: smooth;
 }
-.intro_img01{
+.intro_img{
     text-align: center;
 }
-.intro_img02{
-    text-align: center;
+.event_box_wap h1{
+    padding: 20px 10px;
+    font-family: 'Binggrae';
 }
-.intro_img03{
-    text-align: center;
-}
-.intro_img04{
-    text-align: center;
-}
-/* .intro_img01_caption,.intro_img02_caption,.intro_img03_caption,.intro_img04_caption{
-    /* width: 500%; */
-    /* text-align: center; */
-
 .about{
     margin-bottom: 250px;
     margin: 100px;
 }
-.Test{
+.about img{
+    width: 100%;
+}
+.parallax{
     background-image: url(../parallax.jpg);
     background-size: 100% ;
-    
-    height: 500px;
-}
-
-.about02{
-    margin-bottom: 100px;
-    margin-right: 20px !important;
-    align-items: center!important;
-    margin-right: 5px !important;
     text-align: center;
+    height: 700px;
+    padding: 30px;
 }
-
-
-
-.Con1,.Con2 > h1 {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    text-align: center;
-    font: normal normal normal 34px/60px 'Century Gothic', sans-serif;
-    color: #3b3b3b;
+.parallaxList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
 }
-
-
-/*about our organization*/
-
-/* .intro_img01,.intro_img02,.intro_img03,.intro_img04 > {
-    width: 2000px !important;
-    text-align: center  !important;
-    height: 200px  !important;
-} */
-
 .icon{
     text-align: center;
-    font: 25px;
-}
-.icon h2 {
-    text-align: center;
-    font: normal normal normal 20px/25px 'Century Gothic', sans-serif;
-}
-
-.icon p {
-    text-align: center;
-    font: normal normal normal 14px/23px 'Century Gothic', sans-serif;
+    width: 120px;
+    height: 120px;
 }
 .mvName h1{
     font-family: 'Binggrae';
@@ -103,6 +69,28 @@ html {
 .fire h2{
     font-family: 'Binggrae';
 }
+@media (max-width: 1200px){
+     /* aboutPage */
+    .about{
+        margin: 70px;
+    }
+    .icon{
+        width: 90px;
+        height: 90px;
+    }
+    .parallax{
+        height: 500px;
+    }
+    .parallaxList h2{
+        font-size: 1.7rem;
+    }
+    .parallaxList h5{
+        font-size: 1rem;
+    }
+    .event_box_wap h1{
+        font-size: 2.3rem;
+    }
+}
 @media (max-width: 991.98px){
     .card-body{
         padding: .7rem !important;
@@ -125,6 +113,23 @@ html {
     }
     .btn{
         font-size: 13px !important;
+    }
+    /* aboutPage */
+    .icon{
+        width: 70px;
+        height: 70px;
+    }
+    .parallax{
+        height: 400px;
+    }
+    .parallaxList h2{
+        font-size: 1.5rem;
+    }
+    .parallaxList h5{
+        font-size: .7rem;
+    }
+    .event_box_wap h1{
+        font-size: 1.7rem;
     }
 }
 @media (max-width: 768px){
@@ -173,6 +178,29 @@ html {
     }
     .btn{
         font-size: 10px !important;
+    }
+    .about{
+        margin: 20px;
+    }
+    .icon{
+        width: 40px;
+    }
+    .parallax{
+        height: 250px !important;
+        padding: 20px;
+        background-position-y: position / -4;
+    }
+    .parallaxList{
+        width: calc((50% -20px)/2) !important;
+    }
+    .parallaxList h2{
+        font-size: 1rem;
+    }
+    .parallaxList h5{
+        font-size: .5rem;
+    }
+    .event_box_wap h1{
+        font-size: 1.7rem;
     }
 }
 
