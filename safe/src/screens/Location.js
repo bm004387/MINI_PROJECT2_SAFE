@@ -49,9 +49,9 @@ export default function Map() {
               <h3>Address</h3>
               <h3><small>서울시 구로구 경인로 557 (구로동 606-4)</small></h3>
               <h3>Tel</h3>
-              <h3><small>02-0000-0000</small></h3>
+              <h3><small>02-6894-2219</small></h3>
               <h3>Fax</h3>
-              <h3><small>02-0000-0001</small></h3>
+              <h3><small>02-6987-2153</small></h3>
         </div>
         <div className='traffic'>
           <div className='traffics'>
