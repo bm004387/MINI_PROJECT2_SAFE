@@ -29,9 +29,11 @@ export default function Intro() {
 
     return (
         <>
+            <Container>
                 <div className="about">
                     <Image src="images/intro/about.jpg" class="img-responsive" width={1000} alt="about" fluid />
                 </div>
+            </Container>
                 <Row md={4} className="Test" style={{
                     backgroundPositionY: position / -4,
                 }}>
