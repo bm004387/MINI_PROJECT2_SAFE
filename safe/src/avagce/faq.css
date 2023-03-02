@@ -8,7 +8,6 @@
     background-color: #fff;
     font-family: 'Binggrae';
 }
-
 .accordion-body{
     background-color: lightgray;
     font-size: 17px;
@@ -17,9 +16,47 @@
 .accordion{
     margin-top: 50px;
     padding: 20px 30px;
+    margin-bottom: 100px;
 }
 .accordion h1{
     text-align: center;
     padding: 30px;
     font-family: 'Binggrae';
+}
+@media screen and (max-width: 1200px){
+    .accordion h1{
+        font-size: 2.3rem;
+    }
+    .accordion-button{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .accordion h1{
+        font-size: 2.1rem;
+    }
+    .accordion-button{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 991.98px){
+    .accordion h1{
+        font-size: 1.9rem;
+    }
+    .accordion-button{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    .accordion h1{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width: 576px){
+    .accordion h1{
+        font-size: 1.5rem;
+    }
+    .accordion-button{
+        font-size: 12px;
+    }
 }
