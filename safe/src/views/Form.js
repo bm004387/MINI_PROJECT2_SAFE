@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Form, Button } from 'react-bootstrap'
+import { Row, Col, Form, Button, Container } from 'react-bootstrap'
 import { history } from '../history'
 
 import axios from 'axios'
@@ -54,28 +54,30 @@ export default class Add extends React.Component {
 		const { title, content, mode } = this.state
 
 		return (<>
-			<Row className='mb-2'>
-				<Col md={12}>
-					<Form.Group>
-						<Form.Label>제목</Form.Label>
-						<Form.Control type='text' value={title} onChange={(event) => this.setState({ title: event.target.value })}/>
-					</Form.Group>
-					<Form.Group>
-						<Form.Label>내용</Form.Label>
-						<Form.Control type='text' value={content} onChange={(event) => this.setState({ content: event.target.value })}/>
-					</Form.Group>
-					<Form.Group>
-						<Form.Label>이미지</Form.Label>
-						<Form.Control type="file" accept='image/*' onChange={(event) => this.setState({ image: event.target.files[0] })}/>
-					</Form.Group>
-				</Col>
-				<Col md={6}>
-				<Button className='btn-secondary btn-block' onClick={() => history.goBack()}>취소</Button>
-				</Col>
-				<Col md={6}>
-					<Button className='btn-secondary btn-block' onClick={() => this.action()}>{mode === 'add' ? '글쓰기' : '수정'}</Button>
-				</Col>
-			</Row>
+			<Container>
+				<Row className='mb-2'>
+					<Col md={12}>
+						<Form.Group>
+							<Form.Label>제목</Form.Label>
+							<Form.Control type='text' value={title} onChange={(event) => this.setState({ title: event.target.value })}/>
+						</Form.Group>
+						<Form.Group>
+							<Form.Label>내용</Form.Label>
+							<Form.Control type='text' value={content} onChange={(event) => this.setState({ content: event.target.value })}/>
+						</Form.Group>
+						<Form.Group>
+							<Form.Label>이미지</Form.Label>
+							<Form.Control type="file" accept='image/*' onChange={(event) => this.setState({ image: event.target.files[0] })}/>
+						</Form.Group>
+					</Col>
+					<Col md={6}>
+					<Button className='btn-secondary btn-block' onClick={() => history.goBack()}>취소</Button>
+					</Col>
+					<Col md={6}>
+						<Button className='btn-secondary btn-block' onClick={() => this.action()}>{mode === 'add' ? '글쓰기' : '수정'}</Button>
+					</Col>
+				</Row>
+			</Container>
 		</>)
 	}
 }

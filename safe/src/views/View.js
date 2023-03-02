@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Table, Button } from 'react-bootstrap'
+import { Row, Col, Table, Button, Container } from 'react-bootstrap'
 import { history } from '../history'
 
 import axios from 'axios'
@@ -53,45 +53,47 @@ export default class Board extends React.Component {
 				onClick={() => this.changeStar(i+1)}>{i < info.star ? '★' : '☆'}</Button>) // 클릭시 별점 업데이트
 
 		return (<>
-			<Row className='mb-2'>
-				<Col md={12}>
-					<Table responsive>
-						<tr>
-							<th width='120'>제목</th>
-							<td>{info.title}</td>
-						</tr>
-						<tr>
-							<th>글내용</th>
-							<td>{info.content !== 'null' ? info.content : '내용이 없습니다'}</td>
-						</tr>
-						<tr>
-							<th>이미지</th>
-							<td>
-								{info.image && <img src={`http://localhost:3000/images/${info.image}`} width='100%'/>}
-							</td>
-						</tr>
-					</Table>
-				</Col>
-			</Row>
+			<Container>
+				<Row className='mb-2'>
+					<Col md={12}>
+						<Table responsive>
+							<tr>
+								<th width='120'>제목</th>
+								<td>{info.title}</td>
+							</tr>
+							<tr>
+								<th>글내용</th>
+								<td>{info.content !== 'null' ? info.content : '내용이 없습니다'}</td>
+							</tr>
+							<tr>
+								<th>이미지</th>
+								<td>
+									{info.image && <img src={`http://localhost:3000/images/${info.image}`} width='100%' alt='이미지'/>}
+								</td>
+							</tr>
+						</Table>
+					</Col>
+				</Row>
 
-			<Row className='mb-4'>
-				<Col md={12}>
-					<Button className={`circle ${info.good === 1 ? 'btn-warning' : 'btn-light'} rounded-md mr-4`}
-						onClick={() => this.toggleGood()}>
-						좋아요
-					</Button>
-					
-					{stars}
-				</Col>
-			</Row>
-			<Row>
-				<Col md={6}>
-					<Button className='btn-secondary btn-block' onClick={() => this.update()}>평가내용저장</Button>
-				</Col>
-				<Col md={6}>
-					<Button className='btn-secondary btn-block' onClick={() => history.goBack()}>글목록보기</Button>
-				</Col>
-			</Row>
+				<Row className='mb-4'>
+					<Col md={12}>
+						<Button className={`circle ${info.good === 1 ? 'btn-warning' : 'btn-light'} rounded-md mr-4`}
+							onClick={() => this.toggleGood()}>
+							좋아요
+						</Button>
+						
+						{stars}
+					</Col>
+				</Row>
+				<Row>
+					<Col md={6}>
+						<Button className='btn-secondary btn-block' onClick={() => this.update()}>평가내용저장</Button>
+					</Col>
+					<Col md={6}>
+						<Button className='btn-secondary btn-block' onClick={() => history.goBack()}>글목록보기</Button>
+					</Col>
+				</Row>
+			</Container>
 		</>)
 	}
 }

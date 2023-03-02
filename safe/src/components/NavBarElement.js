@@ -27,12 +27,12 @@ function NavBarElement() {
     </Navbar>
     <Navbar bg="light" expand="lg" className='header'>
       <Container>
-        <Navbar.Brand href="/" className="logo"><img src='/images/logo.png'/></Navbar.Brand>
+        <Navbar.Brand href="/" className="logo"><img src='/images/logo.png' alt='로고이미지'/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/About">About</Nav.Link>
-            <Nav.Link href="/Movie">Movie</Nav.Link>
+            <Nav.Link href="/Movie">Education</Nav.Link>
             <Nav.Link href="/Faq">Faq</Nav.Link>
             <Nav.Link href="/Location">Location</Nav.Link>
             <NavDropdown title="게시판" id="basic-nav-dropdown">

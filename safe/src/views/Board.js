@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Row, Col, Table, Form, Button } from 'react-bootstrap'
+import { Row, Col, Table, Form, Button, Container } from 'react-bootstrap'
 import ReactPaginate from 'react-js-pagination'
 
 import axios from 'axios'
@@ -93,78 +93,80 @@ export default class Board extends React.Component {
 		const { data, page, count, perPage } = this.state
 
 		return (<>
-			<Row>
-				<Col md={12} className='pb-4'>
-					<span>안녕하세요, {auth.name}님 </span>
-					<Link to='/login'>로그아웃</Link>
-				</Col>
+			<Container>
+				<Row>
+					<Col md={12} className='pb-4'>
+						<span>안녕하세요, {auth.name}님 </span>
+						<Link to='/login'>로그아웃</Link>
+					</Col>
 
-				<Col md={12} className='mb-2'>
-					<Table>
-						<thead>
-							<tr>
-								<th><Form.Check type='checkbox' onClick={(event) => this.allCheck(event.target.checked)}/></th>
-								<th>글 번호</th>
-								<th>제목</th>
-								<th>아이디</th>
-								<th>작성자</th>
-								<th>액션</th>
-							</tr>
-						</thead>
-						<tbody>
-							{data.map((obj, index) => <tr key={index}>
-								<td>
-									<input type='checkbox' checked={obj.check} onClick={() => this.clickCheckbox(index)}/>
-								</td>
-								<td>{obj.no}</td>
-								<td>
-									<Link to={`/view/${obj.id}`}>{obj.title}</Link>
-								</td>
-								<td>{obj.user_id}</td>
-								<td>{obj.user_name}</td>
-								<td>
-									<Link to={`/edit/${obj.id}`}>수정</Link>
-									<span> / </span>
-									<Link onClick={() => this.deleteOne(obj.id)}>삭제</Link>
-								</td>
-							</tr>)}
-						</tbody>
-					</Table>
+					<Col md={12} className='mb-2'>
+						<Table>
+							<thead>
+								<tr>
+									<th><Form.Check type='checkbox' onClick={(event) => this.allCheck(event.target.checked)}/></th>
+									<th>글 번호</th>
+									<th>제목</th>
+									<th>아이디</th>
+									<th>작성자</th>
+									<th>액션</th>
+								</tr>
+							</thead>
+							<tbody>
+								{data.map((obj, index) => <tr key={index}>
+									<td>
+										<input type='checkbox' checked={obj.check} onClick={() => this.clickCheckbox(index)}/>
+									</td>
+									<td>{obj.no}</td>
+									<td>
+										<Link to={`/view/${obj.id}`}>{obj.title}</Link>
+									</td>
+									<td>{obj.user_id}</td>
+									<td>{obj.user_name}</td>
+									<td>
+										<Link to={`/edit/${obj.id}`}>수정</Link>
+										<span> / </span>
+										<Link onClick={() => this.deleteOne(obj.id)}>삭제</Link>
+									</td>
+								</tr>)}
+							</tbody>
+						</Table>
 
-					{/* 페이징 처리 */}
-					<ReactPaginate
-						activePage={page}
-						totalItemsCount={count}
-						itemsCountPerPage={perPage}
-						onChange={page => this.handlePage(page)}
-						
-						innerClass='pagination'
-						itemClass='page-item'
-						activeClass='active'
+						{/* 페이징 처리 */}
+						<ReactPaginate
+							activePage={page}
+							totalItemsCount={count}
+							itemsCountPerPage={perPage}
+							onChange={page => this.handlePage(page)}
+							
+							innerClass='pagination'
+							itemClass='page-item'
+							activeClass='active'
 
-						nextPageText='다음'
-						prevPageText='이전'
-						/>
-				</Col>
+							nextPageText='다음'
+							prevPageText='이전'
+							/>
+					</Col>
 
-				<Col md={10}>
-					<Form.Group>
-						<Form.Control type='text' onChange={(event) => this.setState({ search: event.target.value })}/>
-					</Form.Group>
-				</Col>
-				<Col md={2}>
-					<Button className='btn-secondary btn-block' onClick={() => this.search()}>검색</Button>
-				</Col>
+					<Col md={10}>
+						<Form.Group>
+							<Form.Control type='text' onChange={(event) => this.setState({ search: event.target.value })}/>
+						</Form.Group>
+					</Col>
+					<Col md={2}>
+						<Button className='btn-secondary btn-block' onClick={() => this.search()}>검색</Button>
+					</Col>
 
-				<Col md={6}>
-					<Link to='/add'>
-						<Button className='btn-secondary btn-block text-white'>글쓰기</Button>
-					</Link>
-				</Col>
-				<Col md={6}>
-					<Button className='btn-secondary btn-block' onClick={() => this.deleteChk()}>선택삭제</Button>
-				</Col>
-			</Row>
+					<Col md={6}>
+						<Link to='/add'>
+							<Button className='btn-secondary btn-block text-white'>글쓰기</Button>
+						</Link>
+					</Col>
+					<Col md={6}>
+						<Button className='btn-secondary btn-block' onClick={() => this.deleteChk()}>선택삭제</Button>
+					</Col>
+				</Row>
+			</Container>
 		</>)
 	}
 }

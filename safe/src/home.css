@@ -6,6 +6,9 @@
     font-family: 'Binggrae';
     src: url(./Binggrae-Bold.ttf) format('truetype');
 }
+.col{
+    padding-right: 0 !important;
+}
 .container{
     padding: 0 !important;
     max-width: 100% !important;
@@ -374,12 +377,13 @@ span.br{
 }
 
 @media screen and (max-width: 1024px){
+    .maintop{
+        padding: 50px 5px;
+    }
     .topcont h4{
         font-size: 40px;
     }
     .topcont h4:before{
-        content: "";
-        background-image: url(./check_icon.svg);
         background-size: 40px 40px;
         width: 40px;
         height: 40px;
@@ -388,10 +392,11 @@ span.br{
     .job{
         flex-wrap: wrap;
         margin-bottom: 20px !important;
+        justify-content: space-between;
     }
     .job dl{
-        width: calc((100% - 40px) / 3);
-        margin-right: 13px !important;
+        width: calc((100% - 70px) / 3);
+        margin: 0 auto;
     }
     .ftcont{
         display: block;
