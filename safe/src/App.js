@@ -53,7 +53,6 @@ export default class App extends React.Component {
 	render() {
 		return (
     <>
-			<Container>
 				<Row>
 					<Col>
 						{/* 라우팅 */}
@@ -89,7 +88,6 @@ export default class App extends React.Component {
 
             </Col>
 				</Row>
-			</Container>
           
             
 					

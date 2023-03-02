@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom'
 import { Form, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
@@ -51,19 +52,21 @@ export default class Login extends React.Component {
 		if(loggedIn) return <Redirect to='/'/>
 		// 아닐경우 폼 렌더링
 		return (<>
-			<Form onSubmit={this.login}>
-				<Form.Group>
-					<Form.Label>아이디</Form.Label>
-					<Form.Control type='text' onChange={(event) => this.setState({ id: event.target.value })}/>
-				</Form.Group>
+			<Container>
+				<Form onSubmit={this.login}>
+					<Form.Group>
+						<Form.Label>아이디</Form.Label>
+						<Form.Control type='text' onChange={(event) => this.setState({ id: event.target.value })}/>
+					</Form.Group>
 
-				<Form.Group>
-					<Form.Label>비밀번호</Form.Label>
-					<Form.Control type='password'  onChange={(event) => this.setState({ password: event.target.value })}/>
-				</Form.Group>
+					<Form.Group>
+						<Form.Label>비밀번호</Form.Label>
+						<Form.Control type='password'  onChange={(event) => this.setState({ password: event.target.value })}/>
+					</Form.Group>
 
-				<Button type='submit'>로그인</Button> <Button onClick={()=>this.logout()}>로그 아웃</Button>
-			</Form>
+					<Button type='submit'>로그인</Button> <Button onClick={()=>this.logout()}>로그 아웃</Button>
+				</Form>
+			</Container>
 		</>)
 	}
 }

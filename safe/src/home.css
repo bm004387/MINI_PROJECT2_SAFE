@@ -10,17 +10,6 @@
     padding: 0 !important;
     max-width: 100% !important;
 }
-.row{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-.col{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-.py-5{
-    padding-top: 0 !important;
-}
 .main{
     width: 100%;
     height: 100%;
@@ -145,6 +134,12 @@
     white-space: nowrap;
     font-family: 'Binggrae';
 }
+.rightcont ul li:nth-child(1):hover{
+    box-shadow: 0px 5px 20px #00934263;
+}
+.rightcont ul li:nth-child(2):hover{
+    box-shadow: 0px 5px 20px #4b498063;
+}
 span.br{
     display: block;
 }
@@ -220,6 +215,10 @@ span.br{
 .guide_item1 li{
     width: 100%;
     height: 100%;
+    border-radius: 10px 10px 10px 40px;
+}
+.guide_item1 li:hover{
+    box-shadow: 0px 5px 20px #4b498063;
 }
 .guide_item1 li a{
     display: flex;
@@ -240,7 +239,7 @@ span.br{
 }
 .guide_item2{
     width: 100%;
-    background-color: rgb(111, 205, 224);
+    background-color: #6FCDE0;
     border-radius: 10px 10px 10px 10px;
     display: flex;
     align-items: center;
@@ -249,6 +248,9 @@ span.br{
 .guide_item2 li{
     width: 100%;
     height: 100%;
+}
+.guide_item2 li:hover{
+    box-shadow: 0px 5px 20px #6FCDE063;
 }
 .guide_item2 li a{
     display: flex;
