@@ -20,8 +20,8 @@ function NavBarElement() {
         <a href='#!'><img src="/images/icon/instargram_icon.svg" alt='인스타그램 아이콘' title='인스타그램으로 바로가기'/></a>
       </div>
       <div className='loginForm'>
-        <a href='/login'>로그인</a> | 
-       <a href='/register'>회원가입</a>
+        <a href='/login'>로그인</a> 
+       {/*<a href='/register'>회원가입</a> */}
       </div>
     </Container>
     </Navbar>
