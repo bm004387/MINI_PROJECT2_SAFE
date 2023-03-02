@@ -68,7 +68,7 @@ export default class Board extends React.Component {
 							<tr>
 								<th>이미지</th>
 								<td>
-									{info.image && <img src={`http://localhost:3000/images/${info.image}`} width='100%'/>}
+									{info.image && <img src={`http://localhost:3000/images/${info.image}`} width='100%' alt='이미지'/>}
 								</td>
 							</tr>
 						</Table>

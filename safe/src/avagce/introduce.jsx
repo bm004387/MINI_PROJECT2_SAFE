@@ -70,7 +70,7 @@ export default function Intro() {
                 <div className="about">
                     <Image src="images/intro/about02.jpg" className="img-responsive" width={1000} alt="about02" fluid />
                 </div>                                       
-                <Row md={2}>
+                <Row md={2} className="row1">
                     <Col sm={12}>
                         <div className="event_box_wap event_animate_left">
                             <div className="intro_img">

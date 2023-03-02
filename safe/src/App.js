@@ -1,8 +1,8 @@
 import React  from 'react';
 import './App.css';
 //import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import { BrowserRouter as Router,Route, Switch, Redirect, BrowserRouter } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap'
+import { BrowserRouter as Route, Switch, Redirect } from 'react-router-dom';
+import { Row, Col } from 'react-bootstrap'
 
 import Home from './screens/Home';
 //import About from './screens/About';

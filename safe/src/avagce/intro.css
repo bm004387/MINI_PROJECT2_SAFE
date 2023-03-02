@@ -2,6 +2,9 @@
     font-family: 'Binggrae';
     src: url(../Binggrae-Bold.ttf) format('truetype');
 }
+.row1{
+    opacity: (var('position') - 700) / 2;
+}
 html body{
     scroll-behavior: smooth;
 }
