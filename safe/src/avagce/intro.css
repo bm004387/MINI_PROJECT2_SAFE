@@ -69,6 +69,11 @@ html body{
 .fire h2{
     font-family: 'Binggrae';
 }
+@media (max-width: 1300px){
+    .parallax{
+        height: 600px;
+    }
+}
 @media (max-width: 1200px){
      /* aboutPage */
     .about{
