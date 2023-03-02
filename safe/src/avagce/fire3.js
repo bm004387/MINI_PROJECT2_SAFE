@@ -3,11 +3,13 @@ import Button from 'react-bootstrap/Button';
 
 import './intro.css';
 import ReactPlayer from 'react-player'
+import { Container } from "react-bootstrap";
 
 class Movie extends React.Component{
     render(){
         return(
               <>
+              <Container>
               <div className="mvName">
               <h1>온라인 소방 안전교육
               <Button variant="success" href="/Movie">뒤로가기</Button>
@@ -23,8 +25,8 @@ class Movie extends React.Component{
                       controls={true}
                       loop={true}
                       />
-         
               </div>
+              </Container>
               </>
               );
             }

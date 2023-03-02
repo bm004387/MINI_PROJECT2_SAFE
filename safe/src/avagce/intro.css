@@ -2,6 +2,9 @@
     font-family: 'Binggrae';
     src: url(../Binggrae-Bold.ttf) format('truetype');
 }
+.row1{
+    opacity: (var('position') - 700) / 2;
+}
 html body{
     scroll-behavior: smooth;
 }
@@ -160,6 +163,11 @@ html body{
     .btn{
         font-size: 12px !important;
     }
+    /* aboutPage */
+    .icon{
+        width: 50px;
+        height: 50px;
+    }
     .parallax{
         height: 300px;
     }
@@ -187,22 +195,19 @@ html body{
     .btn{
         font-size: 10px !important;
     }
+    /* aboutpage */
     .about{
         margin: 20px;
     }
     .icon{
-        width: 40px;
+        width: 30px;
     }
     .parallax{
-        height: 250px !important;
+        height: 220px !important;
         padding: 20px;
-        background-position-y: position / -4;
-    }
-    .parallaxList{
-        width: calc((50% -20px)/2) !important;
     }
     .parallaxList h2{
-        font-size: 1rem;
+        font-size: .7rem;
     }
     .parallaxList h5{
         font-size: .5rem;

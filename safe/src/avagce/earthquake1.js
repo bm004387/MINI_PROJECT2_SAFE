@@ -2,11 +2,13 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import './intro.css';
 import ReactPlayer from 'react-player'
+import { Container } from "react-bootstrap";
 
 class Movie extends React.Component{
     render(){
         return(
               <>
+              <Container>
               <div className="mvName">
                 <h1>지진이 발생했을 때 어떻게 해야할까?
                 <Button variant="success" href="/Movie">뒤로가기</Button>
@@ -23,6 +25,7 @@ class Movie extends React.Component{
                     loop={true}
                     />
                 </div>
+                </Container>
               </>
               );
             }

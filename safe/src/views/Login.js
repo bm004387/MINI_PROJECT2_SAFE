@@ -2,10 +2,8 @@ import React from 'react'
 import { Container } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom'
 import { Form, Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
 import axios from 'axios'
 import auth from '../auth' // 인증
-import { history } from '../history'
 
 export default class Login extends React.Component {
 	constructor(props) {

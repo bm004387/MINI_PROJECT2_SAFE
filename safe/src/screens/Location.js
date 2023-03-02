@@ -56,28 +56,28 @@ export default function Map() {
         <div className='traffic'>
           <div className='traffics'>
             <div className='transportation'>
-              <img src={Bus}/>
+              <img src={Bus} alt="버스 아이콘"/>
               <h2>버스</h2>
             </div>
             <h2><small>구로역1호선<br></br>③번출구 도보 3분거리</small></h2>
           </div>
           <div className='traffics'>
             <div className='transportation'>
-              <img src={Subway}/>
+              <img src={Subway} alt="지하철 아이콘"/>
               <h2>지하철</h2>
             </div>
             <h2><small>구로역,구로기계공구상가(17147)정류장 하차 <br></br> 간선(파란)버스 : 571, 654</small></h2>
           </div>
           <div className='traffics'>
             <div className='transportation'>
-              <img src={Nav}/>
+              <img src={Nav} alt="네비게이션 아이콘"/>
               <h2>네비게이션</h2>
             </div>
             <h2><small>구로역 "SAFE 교육센터" 검색</small></h2>
           </div>
           <div className='traffics'>
             <div className='transportation'>
-            <img src={Park}/>
+            <img src={Park} alt="주차 아이콘"/>
             <h2>주차안내</h2>
             </div>
             <h2><small>상가 지상 1층 주차장 이용</small></h2>

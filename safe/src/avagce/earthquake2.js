@@ -1,6 +1,6 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
-
+import { Container } from "react-bootstrap";
 import './intro.css';
 import ReactPlayer from 'react-player'
 
@@ -8,6 +8,7 @@ class Movie extends React.Component{
     render(){
         return(
               <>
+              <Container>
               <div className="mvName">
               <h1>지진 대피법
               <Button variant="success" href="/Movie">뒤로가기</Button>
@@ -25,6 +26,7 @@ class Movie extends React.Component{
                       />
          
               </div>
+              </Container>
               </>
               );
             }
